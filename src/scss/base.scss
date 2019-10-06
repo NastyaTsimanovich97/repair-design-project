@@ -1,31 +1,116 @@
 $bg-color: #131313;
+$text-color: #E3B873;
+$FuturaDemiC: 'FuturaDemiC',' Verdana', sans-serif;
+$FuturaBookC: 'FuturaBookC',' Verdana', sans-serif;
+$mobile: 375px;
+$tablet: 768px;
+
+@import url('./fonts.scss');
 
 *{
     margin: 0;
     padding: 0;
 }
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
 }
+
 header{
     width: 100%;
     height: 83px;
+    display: flex;
+    align-items: center;
     background-color: $bg-color;
+   
+    @media screen and (max-width: $mobile){
+        height: 57px;
+    }
 }
+h1{
+    position: relative;
+    left: 5.7vw;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: $FuturaDemiC;
+    text-transform: uppercase;
+    color: $text-color;
+}
+.navigation{
+    position: relative;
+    left: 10.84vw;
+    display: flex; 
+    a{
+        font-size: 14px;
+        line-height: 16px;
+        font-family: FuturaBookC;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        &:hover{
+            color: $text-color;
+        }
+    }
+    li{
+        margin-left: 3vw;
+    }
+}
+.phone{
+    position: relative;
+    left: 18.96vw;
+    font-family: $FuturaDemiC;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: right;
+    text-decoration-line: underline;
+    color: $text-color;
+}
+.request-call{
+    position: relative;
+    left: 22.95vw;
+    width: 161px;
+    height: 37px;
+    background: $text-color;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border: 0;
+    border-radius: 2px;
+    font-family: $FuturaDemiC;
+    font-size: 13px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
 .home{
     width: 100%;
     height: 755px;
     background-color: $bg-color;
+    @media screen and (max-width: $mobile){
+        height: 476px;
+    }
 }
+
 .projects{
     width: 100%;
     height: 1074px;
     background-color: $bg-color;
+    @media screen and (max-width: $mobile){
+        height: 1547px;
+    }
 }
 .measurement{
     width: 100%;
     height: 1440px;
+    @media screen and (max-width: $mobile){
+        height: 2030px;
+    }
 }
 .styles{
     width: 100%;
