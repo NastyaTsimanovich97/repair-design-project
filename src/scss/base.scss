@@ -42,11 +42,19 @@ h1{
     font-family: $FuturaDemiC;
     text-transform: uppercase;
     color: $text-color;
+    @media screen and (max-width: $mobile){
+        font-size: 12px;
+        line-height: 14px;
+    }
 }
 .navigation{
     position: relative;
     left: 10.84vw;
     display: flex; 
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+
     a{
         font-size: 14px;
         line-height: 16px;
@@ -63,17 +71,24 @@ h1{
 }
 .phone{
     position: relative;
-    left: 18.96vw;
+    left: 17.96vw;
     font-family: $FuturaDemiC;
     font-size: 14px;
     line-height: 16px;
     text-align: right;
     text-decoration-line: underline;
     color: $text-color;
+    @media screen and (max-width: $mobile){
+        left: 23.96vw;
+        font-size: 12px;
+        line-height: 14px;
+        text-decoration-line: none;
+        color: #FFFFFF;
+    }
 }
 .request-call{
     position: relative;
-    left: 22.95vw;
+    left: 20.95vw;
     width: 161px;
     height: 37px;
     background: $text-color;
@@ -86,6 +101,9 @@ h1{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
 }
 
 .home{
