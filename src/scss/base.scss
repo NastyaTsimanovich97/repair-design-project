@@ -134,7 +134,7 @@ h1{
     h2{
         position: relative;
         left: 4vw;
-        top: 11vh;
+        top: 22vh;
         width: 676px;
         font-style: normal;
         font-weight: normal;
@@ -151,7 +151,7 @@ h1{
     p{
         position: relative;
         left: 4vw;
-        top: 26vh;
+        top: 25vh;
         width: 462px;
         font-family: $FuturaBookC;
         font-size: 22px;
@@ -206,7 +206,7 @@ h1{
 .home__button-calculate{
     position: relative;
     left: 4vw;
-    top: 32vh;
+    top: 30vh;
     width: 207px;
     height: 51px;
     border: $text-color;  
@@ -233,7 +233,7 @@ h1{
 .home__button-submit{
     position: relative;
     left: 5vw;
-    top: 32vh;
+    top: 30vh;
     width: 207px;
     height: 51px;
     border: 1px solid #FFFFFF;
@@ -273,8 +273,9 @@ h1{
     }
 }
 .button-scroll{
-    position: absolute;
-    top: 92vh;
+    position: relative;
+    right: 6%;
+    top: 57%;
     width: 247px;
     height: 97px;
     background-color: $bg-color;
