@@ -22,6 +22,7 @@ li{
 .wrapper{
     max-width: 1440px;
     margin: 0 auto;
+    overflow:  hidden;
 }
 
 header{
@@ -144,6 +145,7 @@ h1{
         font-family: $YesevaOne;
         color: #FFFFFF;
         @media screen and (max-width: $mobile){
+            top: 10vh;
             font-size: 23px;
             line-height: 132.83%;
         }
@@ -305,14 +307,332 @@ h1{
     }
 }
 
+
 .projects{
+    display: flex;
     width: 100%;
     height: 1074px;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
+        // display: grid;
+        // grid-template-areas: "header" "slider";
+        flex-direction: column;
         height: 1547px;
     }
 }
+.projects__description{
+    display: grid;
+    grid-template-areas: "header header" 
+                         "city area"
+                         "time cost"
+                         "control control";
+    grid-template-rows: 2fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 426px;
+    height: 482px;
+    padding-left: 7vw;
+    padding-top: 16vh;
+    @media screen and (max-width: $mobile){
+        grid-template-areas: "header header" "slider slider" "city area" "time cost";
+        grid-template-rows: 2fr 250px 1fr 1fr;
+        padding-left: 0;
+        padding-top: 7vh;
+        width: 375px;
+    }
+}
+.projects__description-section{
+    grid-area: header;
+}
+.projects__description-header{
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    letter-spacing: -0.07em;
+    text-transform: uppercase;
+    color: $text-color;
+    @media screen and (max-width: $mobile){
+        font-size: 22px;
+        line-height: 138.6%;
+        text-align: center;
+        letter-spacing: -0.07em;
+    }
+}
+.projects_description-line{
+    position: relative;
+    bottom: 9%;
+    left: 38%;
+    width: 92px;
+    border: 1px solid $text-color;
+    background-color: $text-color;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+.projects__description-text{
+    margin-top: 4%;
+    margin-bottom: 11%;
+    font-family: $FuturaBookC;
+    font-size: 18px;
+    line-height: 29px;
+    color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        width: 311px;
+        padding-left: 9%;
+        font-size: 14px;
+        line-height: 158.48%;
+        /* or 22px */
+        text-align: center;
+    }
+}
+.projects__descripion-city,
+.projects__descripion-area,
+.projects__descripion-time,
+.projects__descripion-cost{
+    h2{
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        color: $text-color;
+        @media screen and (max-width: $mobile){
+            font-size: 14px;
+            line-height: 138.6%;
+        }
+    }
+    p{
+        font-family: $FuturaBookC;
+        font-size: 15px;
+        line-height: 20px;
+        color: #FFFFFF;
+        @media screen and (max-width: $mobile){
+            font-size: 14px;
+            line-height: 135.84%;
+        }
+    }
+}
+.projects__descripion-city{
+    grid-area: city;
+    margin-bottom: 18%;
+    @media screen and (max-width: $mobile){
+        margin-top: 8%;
+        padding-left: 11%;
+        margin-bottom: 10%;
+    }
+}
+.projects__descripion-area{
+    grid-area: area;
+    margin-bottom: 18%;
+    @media screen and (max-width: $mobile){
+        margin-top: 8%;
+        margin-bottom: 10%;
+    }
+}
+.projects__descripion-time{
+    grid-area: time;
+    margin-bottom: 18%;
+    @media screen and (max-width: $mobile){
+        padding-left: 11%;
+    }
+}
+.projects__descripion-cost{
+    grid-area: cost;
+    margin-bottom: 18%;
+    @media screen and (max-width: $mobile){
+
+    }
+}
+.projects__slider-control{
+    grid-area: control;
+    align-self: flex-end;
+    input{
+        display: none;
+    }
+}
+
+.projects__slider-label {
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+    label{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 8px;
+        border-radius: 30px;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+  }
+  
+#switch1:checked~.projects__slider-label label[for="switch1"] {
+    background-color: white;
+}
+#switch2:checked~.projects__slider-label label[for="switch2"] {
+    background-color: white;
+}
+#switch3:checked~.projects__slider-label label[for="switch3"] {
+    background-color: white;
+}
+.slider-control_left{
+    margin-right: 10px; 
+}
+.slider-control_right{
+    margin-left: 10px; 
+}
+
+.projects__slider-navigation{
+    margin-bottom: 5%;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+    li{
+        display: inline;
+        margin-right: 6%;
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        line-height: 19px;
+        text-transform: uppercase;
+        color: rgba(255, 255, 255, 0.3);
+        &:hover{
+            padding-bottom: 10px;
+            border-bottom: 1px solid $text-color;
+            color: $text-color;
+        }
+    }
+}
+.projects__slider{
+    position: relative;
+    top: 6%;
+    left: 5%;
+    width: 920px;
+    @media screen and (max-width: $mobile){
+        top: -18%;
+        grid-area: slider;
+        width: 340px;
+        height: 240px;
+    }
+}
+.slides1,
+.slides2,
+.slides3{
+    float: left;
+    width: 47vw;
+    margin-right: 1%;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        height: 241px;
+    }
+
+}
+.slider-inner {
+    width: 92.1%;
+    overflow: hidden;
+    @media screen and (max-width: $mobile){
+        width: 163%;
+    }
+  }
+.slides {
+    width: 300%;
+    transition: all 0.5s;
+}
+.slider_button-right{
+    position: absolute;
+    left: 85%;
+    top: 26%;
+    width: 6.5vh;
+    height: 6.5vh;
+    border: 0;
+    border-radius: 50%;
+    background-color: $text-color;
+    @media screen and (max-width:$mobile) {
+        left: 87%;
+        top: 41%;
+        width: 36px;
+        height: 36px;
+        border: 0;
+        border-radius: 50%;
+        background-color: $text-color;
+        img{
+            width: 6px;
+        }
+    }
+}
+.slider_button-left{
+    display: none;
+    @media screen and (max-width:$mobile) {
+        position: absolute;
+        top: 41%;
+        left: 2%;
+        display: block;
+        width: 36px;
+        height: 36px;
+        border: 0;
+        border-radius: 50%;
+        background-color: $text-color;
+        img{
+            width: 6px;
+        }
+    }
+}
+
+
+.section_online-control{
+    position: absolute;
+    top: 1540px;
+    left: 22vw;
+    height: 550px;
+    @media screen and (max-width:$mobile) {
+        top: 1225px;
+        left: 18px;
+    }
+}
+.online-control_text{
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    @media screen and (max-width:$mobile) {
+        margin-bottom: 5%;
+    }
+}
+.online-control_group{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2%;
+    padding-bottom: 4%;
+    @media screen and (max-width:$mobile) {
+        margin-bottom: 5%;
+    }
+}
+.online-line{
+    width: 32px;
+    height: 0.5px;
+    border: 0.5px solid $text-color;
+    background-color: $text-color;
+}
+.online-control_video{
+    @media screen and (max-width:$mobile) {
+        width: 340px;
+        height: 207px;
+    }
+
+}
+
+
 .measurement{
     width: 100%;
     height: 1440px;

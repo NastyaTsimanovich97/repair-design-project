@@ -40,13 +40,78 @@
                             </button>
                     </div>
                     <div class="button-scroll">
-                        <a href="">Scroll down <img src="./src/assets/chevron.svg" alt="scroll down"></a>
+                        <a href="#footer">Scroll down <img src="./src/assets/chevron.svg" alt="scroll down"></a>
                     </div>
                 </article>
-                
             </section>
             <section class="projects" id="projects">
+                <article class="projects__description">
+                    <section class="projects__description-section">
+                        <h2 class="projects__description-header">Completed<br> projects </h2>
+                        <div class="projects_description-line"></div>
+                        <p class="projects__description-text">Only a small part of the work performed by our company is 
+                            presented on the site. For 14 years on in the construction market 
+                            we have made happy more than 1000 families </p>
+                    </section>
+                    <section class="projects__descripion-city">
+                        <h2 class="descripion-header">City:</h2>
+                        <p class="descripion-text">Rostov-on-Don<br> LCD admiral</p>
+                    </section>
+                    <section class="projects__descripion-area">
+                        <h2 class="descripion-header">apartment area:</h2>
+                        <p class="descripion-text">81 m2</p>
+                    </section>
+                    <section class="projects__descripion-time">
+                        <h2 class="descripion-header">Repair time:</h2>
+                        <p class="descripion-text">3.5 months</p>
+                    </section>
+                    <section class="projects__descripion-cost">
+                        <h2 class="descripion-header">Repair Cost:</h2>
+                        <p class="descripion-text">Upon request</p>
+                    </section>
+                    <section class="projects__slider-control">
+                        <input checked type="radio" name="slider" id="switch1">
+                        <input type="radio" name="slider" id="switch2">
+                        <input type="radio" name="slider" id="switch3">
 
+                        <div id="controls" class="projects__slider-label">
+                                <img class="slider-control_left" src="./src/assets/left-arrow.svg" alt="left" width="40" height="20">
+                                <label for="switch1"></label>
+                                <label for="switch2"></label>
+                                <label for="switch3"></label>
+                                <img class="slider-control_right" src="./src/assets/right-arrow.svg" alt="right" width="40" height="20">
+                        </div>
+                    </section>
+                </article>
+                <section class="projects__slider">
+                    <nav class="projects__slider-navigation">
+                        <ul>
+                            <li>Rostov-on-Don, Admiral</li>
+                            <li>Sochi Thieves</li>
+                            <li>Rostov-on-Don Patriotic</li>
+                        </ul>
+                    </nav>
+                    <div class="slider-inner">
+                        <section class="slides">
+                            <img class="slides1" src="./src/assets/image 2.1.1.png" alt="Rostov-on-Don">
+                            <img class="slides2" src="./src/assets/image 2.1.2.png" alt="Sochi">
+                            <img class="slides3" src="./src/assets/image 2.1.1.png" alt="Rostov-on-Don">
+                        </section>
+                        <button class="slider_button-left"><img src="./src/assets/Vector (Stroke) (1).png" alt="left"></button>
+                        <button class="slider_button-right"><img src="./src/assets/Vector (Stroke).png" alt="right"></button>
+                    </div>
+                </section> 
+            </section>
+            <section class="section_online-control">
+                <p class="online-control_text">online control</p>
+                <div class="online-control_group">
+                    <div class="online-line"></div>
+                    <img class="online-control-img" src="./src/assets/Online.svg" alt="camera" >
+                    <div class="online-line"></div>
+                </div>
+                <div class="online-control_video">
+                    <iframe class="online-control_video" width="817" height="434" src="https://www.youtube.com/embed/fcnZWH209U8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div>
             </section>
             <section class="measurement" id="measurement">
 
@@ -67,7 +132,7 @@
 
             </section>
         </main>
-        <footer>
+        <footer id="footer">
 
         </footer>
     </div>
