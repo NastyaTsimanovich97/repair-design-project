@@ -589,13 +589,16 @@ h1{
     position: absolute;
     top: 1540px;
     left: 22vw;
-    height: 550px;
+    width: 817px;
+    height: 980px;
     @media screen and (max-width:$mobile) {
+        width: 370px;
         top: 1225px;
-        left: 18px;
+        left: 0;
+        margin-left: 4.5%;
     }
 }
-.online-control_text{
+.online-control_header{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
@@ -625,13 +628,169 @@ h1{
     background-color: $text-color;
 }
 .online-control_video{
+    margin-bottom: 4%;
+    iframe{
+        -webkit-box-shadow: 0px 4px 24px -8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 4px 24px -8px rgba(0,0,0,0.75);
+        box-shadow: 0px 4px 24px -8px rgba(0,0,0,0.75);
+    }
     @media screen and (max-width:$mobile) {
         width: 340px;
         height: 207px;
     }
 
 }
+.online-control__text-line{
+    position: relative;
+    left: 46%;
+    width: 55px;
+    height: 0.5px;
+    margin-bottom: 6%;
+    border: 0.5px solid $text-color;
+    @media screen and (max-width:$mobile) {
+        left: 39%;
+    }
+}
+.online-control_text{
+    position: relative;
+    left: 8%;
+    margin-bottom: 12%;
+    width: 681px;
+    font-family: $FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: $bg-color;
+    @media screen and (max-width:$mobile) {
+        left: 0;
+        width: 340px;
+        font-size: 14px;
+        line-height: 169.8%;
+        color: #FFFFFF;
+    }
+}
+.submit-form{
+   position: relative;
+   height: 116px;
+   @media screen and (max-width:$mobile) {
+       width: 340px;
+       height: 311px;
+       display: flex;
+       flex-direction: column;
+   }
+}
+.submit-form__label{
+    position: absolute;
+    bottom: 110px;
+    margin-left: 1.7%;
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: rgba(54, 54, 54, 0.5);
+    @media screen and (max-width:$mobile) {
+        position: relative;
+        bottom: 0;
+        margin-left: 0;
+        font-size: 15px;
+        line-height: 20px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+}
+.submit-form__input{
+    width: 233px;
+    height: 30px;
+    margin-left: 2%;
+    margin-right: 4%;
+    border: 0;
+    border-bottom: 1px solid rgba(54, 54, 54, 0.3);
 
+    font-family: $FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+    color: #363636;
+    @media screen and (max-width:$mobile) {
+        width: 340px;
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 2%;
+        margin-bottom: 12%;
+        background-color: $bg-color;
+        border-bottom: 1px solid rgba(255,255, 255, 0.3);
+        box-sizing: border-box;
+        color: #FFFFFF;
+    }
+}
+.submit-form__button-submit{
+    position: absolute;
+    top: -13%;
+    width: 200px;
+    height: 51px;
+    border: 0;
+    border-radius: 2px;
+    background-color: $text-color;
+    font-family: $FuturaDemiC;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    -moz-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    @media screen and (max-width:$mobile) {
+        top: 282px;
+        width: 340px;
+        height: 51px;
+        -webkit-box-shadow: 0px 0px 0px 0px rgba(227,184,115,1);
+        -moz-box-shadow: 0px 0px 0px 0px rgba(227,184,115,1);
+        box-shadow: 0px 4px 0px 0px rgba(227,184,115,1);
+    }
+}
+
+.submit-form__checkbox{
+  display: none;
+}
+.submit-form__checkbox-label:after {
+    position: absolute;
+    left: -10%;
+    top: 16%;
+	content:'';
+	display:block;
+	height: 11px;
+	width: 11px;
+    outline:1px solid $text-color;
+    border-radius: 1px;
+    @media screen and (max-width:$mobile) {
+       
+    }
+
+}
+.submit-form__checkbox:checked + .submit-form__checkbox-label:after {
+    content: '\2714';
+    width:11px;
+	height:11px;
+	outline:1px solid $text-color;
+    border-radius: 1px;
+    background-color: $text-color;
+    font-size:8px;
+    line-height: 112%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.submit-form__checkbox-label{
+    position: absolute;
+    top: 53%;
+    left: 34%;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    @media screen and (max-width:$mobile) {
+        position: relative;
+        top: 0;
+        left: 10%;
+        color: #FFFFFF;
+    }
+}
 
 .measurement{
     width: 100%;
