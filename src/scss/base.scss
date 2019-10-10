@@ -878,6 +878,7 @@ h1{
 .types-design__section1{
     background-image: url('../assets/types_design1.png');
     background-size: cover;
+    
 }
 .types-design__section2{
     background-image: url('../assets/types_design2.png');
@@ -894,6 +895,9 @@ h1{
     width: 23vw;
     height: 286px;
     background-color: #FFFFFF;
+    -webkit-box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 11px -1px rgba(0,0,0,0.75);
     @media screen and (max-width:$mobile) {
         top: 61%;
         left: 0;
@@ -1200,6 +1204,7 @@ h1{
     background:-ms-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_5.1.png');
     background-size: cover;
     @media screen and (max-width: $mobile){
+        height: 200px;
         flex-direction: column;
         background: $bg-color;
     }
@@ -1277,7 +1282,7 @@ h1{
     display: none;
     @media screen and (max-width: $mobile){
         position: relative;
-        top: -22%;
+        top: -100%;
         left: 5%;
         display: inline;
         width: 340px;
@@ -1331,12 +1336,225 @@ h1{
 }
 
 
-
-
 .design-project{
+    position: relative;
     width: 100%;
     height: 621px;
+    @media screen and (max-width: $mobile){
+        height: 1760px;
+        background-color: $bg-color;
+    }
 }
+.design-project__header{
+    position: relative;
+    top: 25%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+    @media screen and (max-width: $mobile){
+        top: -2%;
+        color: #FFFFFF;
+    }
+}
+.design-project__group{
+    position: absolute;
+    top: 33%;
+    left: 46%;
+    display: flex;
+    align-items: center;
+    @media screen and (max-width: $mobile){
+        top: 1%;
+        left: 36%;
+    }
+}
+.design-project__line{
+    width: 33px;
+    height: 0.5px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 0.5px solid $text-color;
+}
+.design-project__paragraph{
+    position: absolute;
+    top: 42%;
+    left: 27%;
+    width: 668px;
+    height: 57px;
+    font-family: FuturaBookC;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+
+    color: $bg-color;
+    @media screen and (max-width: $mobile){
+        top: 4%;
+        left: 11%;
+        width: 289px;
+        height: 76px;
+        font-size: 15px;
+        line-height: 135.84%;
+        color: #FFFFFF;
+    }
+}
+.design-project__section-group{
+    position: relative;
+    top: 51%;
+    left: 5%;
+    display: flex;
+    justify-content: space-evenly;
+    width: 90%;
+    @media screen and (max-width: $mobile){
+        top: 10%;
+        height: 1530px;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+}
+.design-project__section-item1{
+    width: 392px;
+    height: 421px;
+    background-image: url('../assets/types_design1.png');
+    background-size: cover;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        height: 365px;
+    }
+}
+.design-project__section-item2{
+    width: 392px;
+    height: 421px;
+    background-image: url('../assets/types_design3.png');
+    background-size: cover;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        height: 365px;
+    }
+}
+.design-project__section-item3{
+    width: 392px;
+    height: 421px;
+    background-image: url('../assets/types_design4.png');
+    background-size: cover;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        height: 365px;
+        margin-top: 6%;
+    }
+}
+.design-project__section-article1{
+    width: 330px;
+    height: 211px;
+    margin-left: 8%;
+    margin-top: 74%;
+    background-color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        width: 270px;
+        margin-left: 0;
+    }
+    .design-project__rectangle{
+        @media screen and (max-width: $mobile){
+            margin-top: 24%;
+        }
+    }
+}
+.design-project__section-article2{
+    width: 330px;
+    height: 286px;
+    margin-left: 8%;
+    margin-top: 74%;
+    background-color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        width: 270px;
+        height: 241px;
+        margin-left: 0;
+    }
+}
+.design-project__section-article3{
+    width: 330px;
+    height: 414px;
+    margin-left: 8%;
+    margin-top: 74%;
+    background-color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        width: 270px;
+        height: 241px;
+        margin-left: 0;
+    }
+}
+.design-project__section-header{
+    padding-top: 4%;
+    padding-left: 9%;
+    padding-bottom: 2%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    color: #363636;
+    @media screen and (max-width: $mobile){
+        font-size: 15px;
+        line-height: 138.6%;
+    }
+}
+.design-project__section-list{
+    padding-bottom: 1%;
+    padding-left: 14%;
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 25px;
+    color: #959595;
+    li{
+        list-style: disc;
+    }
+    @media screen and (max-width: $mobile){
+        font-size: 13px;
+        line-height: 169.8%;
+    }
+}
+.design-project__rectangle{
+    width: 228px;
+    height: 54px;
+    margin-top: 12%;
+    background-color: $text-color;
+    @media screen and (max-width: $mobile){
+        width: 190px;
+        height: 40px;
+        -webkit-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+        -moz-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+        box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    }
+    p{
+        padding-left: 11%;
+        padding-top: 6%;
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 25px;
+        text-transform: uppercase;
+        
+        color: #FFFFFF;
+        @media screen and (max-width: $mobile){
+            padding-left: 0;
+            font-size: 15px;
+            line-height: 21px;
+            text-transform: uppercase;
+            text-align: center;
+        }
+    }
+}
+.design-project__items{
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+
+
 .goal{
     width: 100%;
     height: 1615.53px;
