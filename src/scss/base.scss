@@ -3,6 +3,7 @@ $text-color: #E3B873;
 $FuturaDemiC: 'FuturaDemiC',' Verdana', sans-serif;
 $FuturaBookC: 'FuturaBookC',' Verdana', sans-serif;
 $FuturaMediumC: 'FuturaMediumC',' Verdana', sans-serif;
+$ProximaNova: 'ProximaNova', ' Verdana', sans-serif;
 $YesevaOne :'Yeseva One',"Comic Sans MS", cursive;
 $mobile: 375px;
 $tablet: 768px;
@@ -596,7 +597,6 @@ h1{
         width: 370px;
         top: 1225px;
         left: 0;
-        margin-left: 4.5%;
     }
 }
 .online-control_header{
@@ -638,6 +638,7 @@ h1{
     @media screen and (max-width:$mobile) {
         width: 340px;
         height: 207px;
+        padding-left: 2.5%;
     }
 
 }
@@ -665,6 +666,7 @@ h1{
     @media screen and (max-width:$mobile) {
         left: 0;
         width: 340px;
+        padding-left: 4.5%;
         font-size: 14px;
         line-height: 169.8%;
         color: #FFFFFF;
@@ -676,6 +678,7 @@ h1{
    @media screen and (max-width:$mobile) {
        width: 340px;
        height: 311px;
+       padding-left: 4.5%;
        display: flex;
        flex-direction: column;
    }
@@ -853,11 +856,13 @@ h1{
     height: 616px;
     margin-top: 4%;
     @media screen and (max-width:$mobile) {
+        position: absolute;
+        top: -14%;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         width: 370px;
-        height: 1631px;
+        height: 1600px;
         margin-left: 1%;
     }
     section{
@@ -890,6 +895,7 @@ h1{
     height: 286px;
     background-color: #FFFFFF;
     @media screen and (max-width:$mobile) {
+        top: 61%;
         left: 0;
         width: 270px;
         height: 241px;
@@ -962,6 +968,9 @@ h1{
     top: 1600px;
     display: flex;
     height: 683px;
+    @media screen and (max-width:$mobile) {
+         display: none;
+    }
 }
 .section-circle{
     position: relative;
@@ -1068,6 +1077,9 @@ h1{
     width: 506px;
     height: 509px;
     background-color: $bg-color;
+    -webkit-box-shadow: -2px 2px 26px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -2px 2px 26px -12px rgba(0,0,0,0.75);
+    box-shadow: -2px 2px 26px -12px rgba(0,0,0,0.75);
     p{
         margin-top: 5%;
         font-family: $FuturaDemiC;
@@ -1139,9 +1151,7 @@ h1{
     width: 11px;
     outline:1px solid $text-color;
     border-radius: 1px;
-    @media screen and (max-width:$mobile) {
-         
-    }
+    
 }
 .request-form__checkbox:checked + .request-form__checkbox-label:after {
     content: '\2714';
@@ -1164,18 +1174,165 @@ h1{
     line-height: 22px;
     color: #FFFFFF;
 }
+.piggy-bank{
+    position: relative;
+    top: 20%;
+    left: 10%;
+    display: flex;
+    p{
+        width: 222px;
+        margin-top: 4%;        
+        font-family: $FuturaDemiC;
+        font-size: 20px;
+        line-height: 25px;
+        color: #E3B873;
+        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+    }
+}
   
 
-
-
 .styles{
+    display: flex;
     width: 100%;
     height: 864px;
     background:-webkit-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_5.1.png');
     background:-moz-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_5.1.png');
     background:-ms-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_5.1.png');
     background-size: cover;
+    @media screen and (max-width: $mobile){
+        flex-direction: column;
+        background: $bg-color;
+    }
 }
+.styles__article{
+    width: 375px;
+    padding-top: 9%;
+    padding-left: 10%;
+    @media screen and (max-width: $mobile){
+        padding-top: 0;
+        padding-left: 0;
+    }
+}
+.styles__article__header{
+    margin-bottom: 7%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+    color: $text-color;
+    @media screen and (max-width: $mobile){
+        position: relative;
+        top: -310%;
+        margin-bottom: 0;
+        text-align: center;
+    }
+}
+.styles__article__list{
+    a{
+        margin-bottom: 2%;
+        font-family: $ProximaNova;
+        font-size: 20px;
+        line-height: 34px;
+        color: #FFFFFF;
+        &:hover{
+            padding-bottom: 4px;
+            border-bottom: 1px solid $text-color;
+            color: $text-color;
+        }
+    }
+    li{
+        margin-top: 3%;
+    }
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+
+}
+.styles-img{
+    position: relative;
+    left: 5%;
+    top: -3%;
+    width: 860px; 
+    @media screen and (max-width: $mobile){
+        display: none;
+    }   
+}
+.styles-img__item2{
+    position: relative;
+    top: -39%;
+    left: 4%;
+}
+.styles-img__item3{
+    position: relative;
+    top: -28%;
+}
+.styles-img__item4{
+    position: relative;
+    left: 5%;
+    top: -35%;
+}
+.styles-img__slider{
+    display: none;
+    @media screen and (max-width: $mobile){
+        position: relative;
+        top: -22%;
+        left: 5%;
+        display: inline;
+        width: 340px;
+        height: 242px;
+    } 
+}
+.slider-img__item1,
+.slider-img__item2,
+.slider-img__item3{
+    float: left;
+    width: 340px;
+    height: 242px;
+}
+.styles-img__slider-inner{
+    overflow: hidden;
+}
+.styles-img__slides {
+    width: 300%;
+    transition: all 0.5s;
+}
+.styles-img__slider-inner input{
+    display: none;
+}
+.styles-img__button-left{
+    position: absolute;
+    top: 46%;
+    left: 2%;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #E3B873;
+    img{
+        width: 6px;
+    }
+}
+.styles-img__button-right{
+    position: absolute;
+    top: 46%;
+    right: 2%;
+    display: block;
+    width: 36px;
+    height: 36px;
+    border: 0;
+    border-radius: 50%;
+    background-color: #E3B873;
+    img{
+        width: 6px;
+    }
+}
+
+
+
+
 .design-project{
     width: 100%;
     height: 621px;
