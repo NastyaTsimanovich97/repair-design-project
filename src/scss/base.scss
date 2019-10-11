@@ -1560,13 +1560,17 @@ h1{
     height: 1615.53px;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
-        display: none;
+        height: 1900px;
     }
+    
 }
 .goal__content{
     position: relative;
     top: 26%;
     padding-left: 7%;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
 }
 .goal__header-text{
     font-family: $FuturaDemiC;
@@ -1633,7 +1637,6 @@ h1{
     
     color: #FFFFFF;
 }
-
 .goal__slider-control input{
     display: none;
 }
@@ -1651,8 +1654,7 @@ h1{
         background: rgba(255, 255, 255, 0.3);
     }
     
-  }
-  
+} 
 #goal__switch1:checked~.goal__slider-control__label label[for="goal__switch1"] {
     background-color: white;
 }
@@ -1745,6 +1747,188 @@ h1{
     width: 765px;
     height: 376px;
 }
+
+
+.team{
+    position: relative;
+    top: 32%;
+    @media screen and (max-width: $mobile){
+        top: 4%;
+    }
+}
+.team__header{
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        font-size: 22px;
+        line-height: 138.6%;
+    }
+}
+.team__header-group{
+    display: flex;
+    align-items: center;
+    padding-left: 45.4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    @media screen and (max-width: $mobile){
+        padding-left: 32%;
+        padding-top: 4%;
+        padding-bottom: 4%;
+    }
+}
+.team__header-line{
+    margin: 0 10px;
+    width: 32px;
+    height: 0.5px;
+    border: 0.5px solid $text-color;
+}
+.team__header-text{
+    width: 450px;
+    padding-left: 34.4%;
+    font-family: $FuturaBookC;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #FFFFFF;    
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        padding-left: 5%;
+        font-size: 15px;
+        line-height: 135.84%;
+    }
+}
+.team-person__container{
+    display: flex;
+    width: 1100px;
+    justify-content: space-between;
+    padding-left: 11%;
+    padding-top: 5%;
+    @media screen and (max-width: $mobile){
+        width: 348px;
+        height: 1480px;
+        flex-direction: column;
+        padding-top: 20%;
+        padding-left: 13%;
+    }
+}
+.team-person{
+    width: 272px;
+    height: 357px;
+    @media screen and (max-width: $mobile){
+        width: 304px;
+        background-size: cover;
+    }
+}
+.team-person1{
+    background-image: url('../assets/person1.png');
+}
+.team-person2{
+    background-image: url('../assets/person2.png');
+}
+.team-person3{
+    background-image: url('../assets/person3.png');
+}
+.team-person__logo{
+    position: relative;
+    bottom: 9%;
+    right: 12%;
+    width: 70px;
+    height: 70px;
+    background-color: $text-color;
+    text-align: center;
+    -webkit-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    -moz-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    img{
+        padding-top: 15%;
+    }
+}
+.team-person__article{
+    width: 233px;
+    height: 137px;
+    margin-left: 7%;
+    margin-top: 76%;
+    background-color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        margin-left: 12%;
+    }
+}
+.team-person__name{
+    position: relative;
+    top: 10%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-align: center;
+    
+    color: #181818;
+    @media screen and (max-width: $mobile){
+        top: 12%;
+    }
+}
+.team-person__text{
+    position: relative;
+    top: 15%;
+    font-family: $FuturaBookC;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #959595;
+    @media screen and (max-width: $mobile){
+        top: 17%;
+    }
+}
+.team-person__experience{
+    width: 233px;
+    height: 44px;
+    margin-top: 19%;
+    background-color: $text-color;
+    p{
+        padding-top: 5%;
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 13px;
+        line-height: 20px;
+        text-align: center;
+        text-transform: uppercase;
+
+        color: #FFFFFF;
+    }
+}
+.team__line{
+    width: 55px;
+    height: 0.5px;
+    margin-top: 7%;
+    margin-bottom: 2%;
+    margin-left: 47%;
+    border: 0.5px solid $text-color;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+.team__text{
+    width: 558px;
+    margin-left: 30%;
+    font-family: $FuturaBookC;
+    font-size: 20px;
+    line-height: 34px;
+    text-align: center;
+    color: $bg-color;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+
 
 
 .clients{
