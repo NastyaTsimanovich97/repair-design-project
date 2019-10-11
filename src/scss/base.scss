@@ -1341,7 +1341,7 @@ h1{
     width: 100%;
     height: 621px;
     @media screen and (max-width: $mobile){
-        height: 1760px;
+        height: 1910px;
         background-color: $bg-color;
     }
 }
@@ -1559,7 +1559,194 @@ h1{
     width: 100%;
     height: 1615.53px;
     background-color: $bg-color;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
 }
+.goal__content{
+    position: relative;
+    top: 26%;
+    padding-left: 7%;
+}
+.goal__header-text{
+    font-family: $FuturaDemiC;
+    font-size: 15px;
+    line-height: 21px;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.goal__header{
+    width: 163px;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 37px;
+    text-transform: uppercase;
+
+    color: $text-color;
+}
+.goal__header-line{
+    position: absolute;
+    top: 14%;
+    left: 21%;
+    width: 91px;
+    height: 0.5px;
+    border: 0.5px solid $text-color;
+}
+.goal__slider{
+    display: flex;
+}
+.goal__slider-text{
+    width: 465px;
+}
+.goal__slider-number{
+    padding-top: 15%;
+    padding-bottom: 4%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 25px;
+    text-transform: uppercase;
+    color: #FFFFFF;   
+}
+.goal__slider-header{
+    padding-bottom: 4%;
+    width: 250px;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 23px;
+    text-transform: uppercase;
+
+    color: $text-color;
+}
+.goal__slider-paragraph{
+    padding-bottom: 4%;
+    width: 330px;
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 25px;
+    
+    color: #FFFFFF;
+}
+
+.goal__slider-control input{
+    display: none;
+}
+.goal__slider-control__label {
+    padding-top: 15%;
+    display: flex;
+    align-items: center;
+    label{
+        display: inline-block;
+        width: 8px;
+        height: 8px;
+        margin: 0 8px;
+        border-radius: 30px;
+        cursor: pointer;
+        background: rgba(255, 255, 255, 0.3);
+    }
+    
+  }
+  
+#goal__switch1:checked~.goal__slider-control__label label[for="goal__switch1"] {
+    background-color: white;
+}
+#goal__switch2:checked~.goal__slider-control__label label[for="goal__switch2"] {
+    background-color: white;
+}
+#goal__switch3:checked~.goal__slider-control__label label[for="goal__switch3"] {
+    background-color: white;
+}
+#goal__switch4:checked~.goal__slider-control__label label[for="goal__switch4"] {
+    background-color: white;
+}
+#goal__switch5:checked~.goal__slider-control__label label[for="goal__switch5"] {
+    background-color: white;
+}
+#goal__switch6:checked~.goal__slider-control__label label[for="goal__switch6"] {
+    background-color: white;
+}
+.goal__slider-control_left{
+    margin-right: 20px; 
+}
+.goal__slider-control_right{
+    margin-left: 20px; 
+}
+.goal__slider-navigation-control input{
+    display: none;
+}
+.goal__slider-navigation__label{
+    display: grid;
+    grid-template-areas: "ar1 ar2 ar3" "ar4 ar5 ar6";
+    grid-template-columns: repeat(3, 45%);
+    grid-template-rows: 106px 1fr;
+    width: 94%;
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    color: #FFFFFF70;
+    span{
+        padding-bottom: 1%;
+        border-bottom: 1px solid $text-color;
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        line-height: 27px;
+        text-transform: uppercase;
+    }
+    label{
+        width: 127px;
+    }
+}
+.goal__slider-navigation__label1{
+    grid-area: ar1;
+}
+.goal__slider-navigation__label2{
+    grid-area: ar2;
+}
+.goal__slider-navigation__label3{
+    grid-area: ar3;
+}
+.goal__slider-navigation__label4{
+    grid-area: ar4;
+}
+.goal__slider-navigation__label5{
+    grid-area: ar5;
+}
+.goal__slider-navigation__label6{
+    grid-area: ar6;
+}
+  
+#goal__nav1:checked~.goal__slider-navigation__label label[for="goal__nav1"] {
+    color: #FFFFFF;
+}
+#goal__nav2:checked~.goal__slider-navigation__label label[for="goal__nav2"] {
+    color: #FFFFFF;
+}
+#goal__nav3:checked~.goal__slider-navigation__label label[for="goal__nav3"] {
+    color: #FFFFFF;
+}
+#goal__nav4:checked~.goal__slider-navigation__label label[for="goal__nav4"] {
+    color: white;
+}
+#goal__nav5:checked~.goal__slider-navigation__label label[for="goal__nav5"] {
+    color: white;
+}
+#goal__nav6:checked~.goal__slider-navigation__label label[for="goal__nav6"] {
+    color: white;
+}
+.goal__slider-inner{
+    margin-top: 5%;
+    width: 765px;
+    height: 376px;
+}
+
+
 .clients{
     width: 100%;
     height: 1522px;
