@@ -2050,14 +2050,140 @@ h1{
 }
 
 
-
 .map{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
     height: 953.9px;
-    background:-webkit-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_7.2.png');
-    background:-moz-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_7.2.png');
-    background:-ms-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_7.2.png');
+    background:-webkit-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
+    background:-moz-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
+    background:-ms-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
 }
+.form-questions{
+    position: relative;
+    bottom: 24%;
+    width: 883px;
+    height: 445px;
+    background-color: $bg-color;
+}
+.form-questions__container{
+    display: grid;
+    grid-template-areas: "header header" "name phone" "question question" "check check" "submit submit";
+    width: 520px;
+    height: 375px;
+    padding-top: 4%;
+    padding-left: 20%;
+}
+.form-questions__header{
+    grid-area: header;
+    margin-bottom: 7%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+}
+.form-questions__label{
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 20px;
+    
+    color: rgba(255, 255, 255, 0.5);
+}
+.form-questions__input{
+    width: 231px;
+    height: 35px;
+    border: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: $bg-color;
+    font-family: $FuturaBookC;
+    font-size: 18px;
+    line-height: 24px;
+    color: #FFFFFF;    
+}
+.form-questions__input::placeholder{
+    color: #FFFFFF;
+}
+.form-questions__check{
+    position: relative;
+    grid-area: check;
+    justify-self: center;
+    width: 350px;
+    margin-top: 6%;
+    margin-bottom: 4%;
+}
+.form-questions__checkbox{
+    display: none;
+}
+.form-questions__checkbox-label:after {
+    position: absolute;
+    top: 10%;
+    left: 7%;
+    content:'';
+    display:block;
+    height: 11px;
+    width: 11px;
+    outline:1px solid $text-color;
+    border-radius: 1px;
+    
+}
+.form-questions__checkbox:checked + .form-questions__checkbox-label:after {
+    content: '\2714';
+    width:11px;
+    height:11px;
+    outline:1px solid $text-color;
+    border-radius: 1px;
+    background-color: $text-color;
+    font-size:8px;
+    line-height: 112%;
+    color: #FFFFFF;
+    text-align: center;
+}
+.form-questions__checkbox-label{
+    margin-left: 15%;
+    font-family: $FuturaBookC;
+    font-size: 16px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.form-questions__button-submit{
+    grid-area: submit;
+    justify-self: center;
+    width: 200px;
+    height: 51px;
+    border: 0;
+    background-color: $text-color;
+    font-family: $FuturaDemiC;
+    font-size: 15px;
+    line-height: 26px;
+    text-align: center;
+    text-transform: uppercase;
+    
+    color: #FFFFFF;
+}
+.form-questions__label-name{
+    grid-area: name;
+}
+.form-questions__label-phone{
+    grid-area: phone;
+}
+.form-questions__label-question{
+    grid-area: question;
+    margin-top: 5%;
+}
+.form-questions__label-question input{
+    width: 520px;
+}
+
+
+
+
 footer{
     width: 100%;
     height: 133px;

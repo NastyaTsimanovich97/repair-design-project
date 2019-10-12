@@ -505,7 +505,28 @@
                 </section>
             </section>
             <section class="map">
-
+                <form class="form-questions" action="">
+                    <div class="form-questions__container">
+                        <p class="form-questions__header">Have any questions?</p>
+                        <div class="form-questions__label-name">
+                            <label class="form-questions__label" for="form-questions-name">Name</label>
+                            <input class="form-questions__input" type="text" name="form-questions-name" id="form-questions-name" placeholder="What is your name:" pattern="[A-Za-zА-Яа-яЁё]{2,}" required >
+                        </div>
+                        <div class="form-questions__label-phone">
+                            <label class="form-questions__label" for="form-questions-phone">Phone</label>
+                            <input class="form-questions__input" type="text" name="form-questions-phone" id="form-questions-phone" placeholder="Your phone number:" pattern="[0-9]{11}" required>
+                        </div>
+                        <div class="form-questions__label-question">
+                            <label class="form-questions__label" for="form-questions-email">Question</label>
+                            <input class="form-questions__input" type="text" name="form-questions-email" id="form-questions-email" placeholder="I want to know:" required>
+                        </div>
+                        <div class="form-questions__check">
+                                <input class="form-questions__checkbox" type="checkbox" name="checkbox-agree" id="checkbox-agree" checked required>
+                                <label class="form-questions__checkbox-label" for="checkbox-agree">I agree to the processing of personal data</label>
+                            </div> 
+                        <button class="form-questions__button-submit" type="submit">Submit</button>    
+                    </div>
+                </form>
             </section>
         </main>
         <footer id="footer">
