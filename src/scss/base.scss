@@ -1930,11 +1930,127 @@ h1{
 }
 
 
-
 .clients{
     width: 100%;
-    height: 1522px;
+    height: 1050px;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
 }
+.clients__header{
+    margin-top: 39%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #181818;
+}
+.clients__header-group{
+    display: flex;
+    align-items: center;
+    margin-left: 44.5%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+}
+.clients__header-line{
+    width: 32px;
+    height: 0.5px;
+    margin-right: 2%;
+    margin-left: 2%;
+    border: 0.5px solid $text-color;
+}
+.clients__header-text{
+    width: 400px;
+    margin-left: 36%;
+    font-family: $FuturaBookC;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+    color: #363636;  
+    text-transform: lowercase;  
+}
+.clients__container{
+    display: flex;
+    justify-content: space-around;
+    width: 91vw;    
+    padding-left: 6%;
+    padding-top: 4%;
+}
+.clients__person{
+    width: 376px;
+    height: 424px;
+    background-color: #FFFFFF;
+}
+.clients__person-header{
+    display: flex;
+    align-items: center;
+    margin-left: 6%;
+    margin-top: 5%;
+    img{
+        border-radius: 50%;
+    }
+}
+.clients__person-name{
+    padding-left: 4%;
+    font-family: $YesevaOne;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    
+    color: #181818;
+}
+.clients__person-review{
+    width: 324px;
+    margin-left: 6%;
+    margin-top: 2%;
+    font-family: $FuturaBookC;
+    font-size: 15px;
+    line-height: 180%;
+    /* or 27px */
+    color: #959595;
+}
+.clints__param{
+    display: flex;
+    width: 293.7px;
+    height: 53.6px;
+    margin-top: 15%;
+    background-color: $text-color;
+    -webkit-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    -moz-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    p{
+        position: relative;
+        left: 15%;
+        font-family: $YesevaOne;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        line-height: 24px;
+
+        color: #FFFFFF;
+    }
+    img{
+        position: relative;
+        left: 7%;
+    }
+}
+.clients__meters{
+    width: 130px;
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #FFFFFF;
+}
+.clients__days{
+    display: flex;
+    align-items: center;
+}
+
+
+
 .map{
     width: 100%;
     height: 953.9px;
