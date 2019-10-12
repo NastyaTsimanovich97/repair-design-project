@@ -319,7 +319,7 @@ h1{
         // display: grid;
         // grid-template-areas: "header" "slider";
         flex-direction: column;
-        height: 1547px;
+        height: 1040px;
     }
 }
 .projects__description{
@@ -594,9 +594,10 @@ h1{
     width: 817px;
     height: 980px;
     @media screen and (max-width:$mobile) {
-        width: 370px;
         top: 1225px;
         left: 0;
+        width: 370px;
+        height: 350px;
     }
 }
 .online-control_header{
@@ -642,20 +643,29 @@ h1{
     }
 
 }
-.online-control__text-line{
+.section__submit-form{
     position: relative;
-    left: 46%;
+    @media screen and (max-width: $mobile){
+        background-color: $bg-color;
+    }
+}
+.online-control__text-line{
+    position: absolute;
+    left: 48%;
+    top: -7%;
     width: 55px;
     height: 0.5px;
     margin-bottom: 6%;
     border: 0.5px solid $text-color;
     @media screen and (max-width:$mobile) {
-        left: 39%;
+        position: relative;
+        left: 41%;
     }
 }
 .online-control_text{
     position: relative;
-    left: 8%;
+    left: 26%;
+    margin-top: 17%;
     margin-bottom: 12%;
     width: 681px;
     font-family: $FuturaBookC;
@@ -666,6 +676,7 @@ h1{
     @media screen and (max-width:$mobile) {
         left: 0;
         width: 340px;
+        margin-top: 10%;
         padding-left: 4.5%;
         font-size: 14px;
         line-height: 169.8%;
@@ -675,9 +686,11 @@ h1{
 .submit-form{
    position: relative;
    height: 116px;
+   left: 20%;
    @media screen and (max-width:$mobile) {
        width: 340px;
        height: 311px;
+       left: 0;
        padding-left: 4.5%;
        display: flex;
        flex-direction: column;
@@ -750,9 +763,18 @@ h1{
         box-shadow: 0px 4px 0px 0px rgba(227,184,115,1);
     }
 }
-
+.check{
+    position: relative;
+    top: 30%;
+    right: 11%;
+    @media screen and (max-width:$mobile) {
+        top: -4%;
+        right: 2%;
+    }
+}
 .submit-form__checkbox{
   display: none;
+  
 }
 .submit-form__checkbox-label:after {
     position: absolute;
@@ -797,11 +819,10 @@ h1{
 }
 
 
-
 .measurement{
     position: relative;
     width: 100%;
-    height: 2620px;
+    height: 1900px;
     @media screen and (max-width: $mobile){
         height: 2030px;
     }
@@ -809,7 +830,7 @@ h1{
 
 .article__type-repair{
     position: absolute;
-    top: 780px;
+    top: 80px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -969,7 +990,7 @@ h1{
 
 .circle-request{
     position: relative;
-    top: 1600px;
+    top: 980px;
     display: flex;
     height: 683px;
     @media screen and (max-width:$mobile) {
@@ -2057,9 +2078,9 @@ h1{
     align-items: center;
     width: 100%;
     height: 953.9px;
-    background:-webkit-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
-    background:-moz-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
-    background:-ms-linear-gradient(45deg, #13131390, #13131390), url('../assets/image_7.2.png');
+    background:-webkit-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
+    background:-moz-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
+    background:-ms-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
 }
 .form-questions{
     position: relative;
