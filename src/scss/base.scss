@@ -774,6 +774,7 @@ h1{
 }
 .submit-form__checkbox{
   display: none;
+
 }
 .submit-form__checkbox-label:after {
     position: absolute;
@@ -1576,7 +1577,7 @@ h1{
     height: 1615.53px;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
-        height: 1900px;
+        height: 2085px;
     }
     
 }
@@ -2076,6 +2077,9 @@ h1{
     background:-webkit-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
     background:-moz-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
     background:-ms-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
+    @media screen and (max-width: $mobile){
+        background: $bg-color;
+    }
 }
 .form-questions{
     position: relative;
@@ -2083,6 +2087,10 @@ h1{
     width: 883px;
     height: 445px;
     background-color: $bg-color;
+    @media screen and (max-width: $mobile){
+       width: 375px;
+       height: 550px;
+    }
 }
 .form-questions__container{
     display: grid;
@@ -2091,6 +2099,13 @@ h1{
     height: 375px;
     padding-top: 4%;
     padding-left: 20%;
+    @media screen and (max-width: $mobile){
+        grid-template-areas: "header" "name" "phone" "question" "check" "submit";
+        width: 375px;
+        height: 550px;
+        padding-left: 4%;
+        padding-top: 23%;
+     }
 }
 .form-questions__header{
     grid-area: header;
@@ -2121,7 +2136,10 @@ h1{
     font-family: $FuturaBookC;
     font-size: 18px;
     line-height: 24px;
-    color: #FFFFFF;    
+    color: #FFFFFF;  
+    @media screen and (max-width: $mobile){
+        width: 340px;
+    }  
 }
 .form-questions__input::placeholder{
     color: #FFFFFF;
@@ -2133,6 +2151,9 @@ h1{
     width: 350px;
     margin-top: 6%;
     margin-bottom: 4%;
+    @media screen and (max-width: $mobile){
+        justify-self: start;
+    }
 }
 .form-questions__checkbox{
     display: none;
@@ -2147,6 +2168,9 @@ h1{
     width: 11px;
     outline:1px solid $text-color;
     border-radius: 1px;
+    @media screen and (max-width: $mobile){
+        left: 0;
+    }
     
 }
 .form-questions__checkbox:checked + .form-questions__checkbox-label:after {
@@ -2167,6 +2191,9 @@ h1{
     font-size: 16px;
     line-height: 22px;
     color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        margin-left: 7%;
+    }
 }
 .form-questions__button-submit{
     grid-area: submit;
@@ -2182,12 +2209,21 @@ h1{
     text-transform: uppercase;
     
     color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+        height: 51px;
+        justify-self: start;
+        margin-left: 1%;
+    }
 }
 .form-questions__label-name{
     grid-area: name;
 }
 .form-questions__label-phone{
     grid-area: phone;
+    @media screen and (max-width: $mobile){
+        margin-top: 5%;
+    }
 }
 .form-questions__label-question{
     grid-area: question;
@@ -2195,6 +2231,9 @@ h1{
 }
 .form-questions__label-question input{
     width: 520px;
+    @media screen and (max-width: $mobile){
+        width: 340px;
+    }
 }
 
 
