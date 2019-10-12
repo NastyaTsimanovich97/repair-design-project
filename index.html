@@ -220,16 +220,16 @@
                         <form action="" class="request-form">
                             <p>Leave a request for free <br> departure of the measurer</p>
                             <label class="request-form__label" for="request-name">Name</label>
-                            <input class="request-form__input" type="text" name="request-name" id=request-name" placeholder="What is your name:" pattern="[A-Za-zА-Яа-яЁё]{2,}" required >
+                            <input class="request-form__input" type="text" name="request-name" id="request-name" placeholder="What is your name:" pattern="[A-Za-zА-Яа-яЁё]{2,}" required >
                             <label class="request-form__label" for="request-phone">Phone</label>
                             <input class="request-form__input" type="text" name="request-phone" id="request-phone" placeholder="Your phone number:" pattern="[0-9]{11}" required>
                             <label class="request-form__label" for="request-email">Email</label>
                             <input class="request-form__input" type="email" name="request-email" id="request-email" placeholder="Your email" required>
 
                             <div class="request-check">
-                                    <input class="request-form__checkbox" type="checkbox" name="checkbox-agree" id="checkbox-agree" checked required>
-                                    <label class="request-form__checkbox-label" for="checkbox-agree">I agree to the processing of personal data</label>
-                                </div> 
+                                <input class="request-form__checkbox" type="checkbox" name="checkbox-request" id="checkbox-request" checked required>
+                                <label class="request-form__checkbox-label" for="checkbox-request">I agree to the processing of personal data</label>
+                            </div> 
                             <button class="request-form__button-submit" type="submit">Call the measurer</button>
                         </form>
                         <div class="piggy-bank">
@@ -524,8 +524,8 @@
                             <input class="form-questions__input" type="text" name="form-questions-email" id="form-questions-email" placeholder="I want to know:" required>
                         </div>
                         <div class="form-questions__check">
-                                <input class="form-questions__checkbox" type="checkbox" name="checkbox-agree" id="checkbox-agree" checked required>
-                                <label class="form-questions__checkbox-label" for="checkbox-agree">I agree to the processing of personal data</label>
+                                <input class="form-questions__checkbox" type="checkbox" name="checkbox-question" id="checkbox-question" checked required>
+                                <label class="form-questions__checkbox-label" for="checkbox-question">I agree to the processing of personal data</label>
                             </div> 
                         <button class="form-questions__button-submit" type="submit">Submit</button>    
                     </div>

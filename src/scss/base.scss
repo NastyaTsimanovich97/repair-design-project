@@ -774,7 +774,6 @@ h1{
 }
 .submit-form__checkbox{
   display: none;
-  
 }
 .submit-form__checkbox-label:after {
     position: absolute;
@@ -786,10 +785,6 @@ h1{
 	width: 11px;
     outline:1px solid $text-color;
     border-radius: 1px;
-    @media screen and (max-width:$mobile) {
-       
-    }
-
 }
 .submit-form__checkbox:checked + .submit-form__checkbox-label:after {
     content: '\2714';
