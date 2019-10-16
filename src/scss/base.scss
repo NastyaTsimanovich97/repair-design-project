@@ -14,15 +14,9 @@ $tablet: 768px;
     margin: 0;
     padding: 0;
 }
-a{
-    text-decoration: none;
-}
-li{
-    list-style: none;
-}
-body{
-    background-color: $bg-color;
-}
+a{ text-decoration: none; }
+li{ list-style: none; }
+body{ background-color: $bg-color; }
 .wrapper{
     // max-width: 1440px;
     margin: 0 auto;
@@ -34,7 +28,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 83px;
+    height: 5.9vw;
     background-color: $bg-color;
    
     @media screen and (max-width: $mobile){
@@ -46,7 +40,7 @@ h1{
     left: 5.7vw;
     width: 14vw;
     font-size: 1vw;
-    line-height: 16px;
+    line-height: 1.1vw;
     font-family: $FuturaDemiC;
     text-transform: uppercase;
     color: $text-color;
@@ -64,22 +58,14 @@ h1{
     @media screen and (max-width: $mobile){
         display: none;
     }
-    @media screen and (max-width: 1100px){
-        left: 8.84vw;
-        flex-wrap: wrap;
-    }
-
     a{
-        font-size: 90%;
+        font-size: 1.05vw;
         line-height: 16px;
         font-family: FuturaBookC;
         color: #FFFFFF;
         text-transform: uppercase;
         &:hover{
             color: $text-color;
-        }
-        @media screen and (max-width: 1100px){
-            font-size: 70%;
         }
     }
     li{
@@ -91,21 +77,11 @@ h1{
     left: 12.96vw;
     width: 9vw;
     font-family: $FuturaDemiC;
-    font-size: 1vw;
+    font-size: 1.05vw;
     line-height: 16px;
     text-align: right;
     text-decoration-line: underline;
     color: $text-color;
-    @media screen and (max-width: 1100px){
-        font-size: 70%;
-    }
-    @media screen and (max-width: 850px){
-        left: 10.96vw;
-    }
-    @media screen and (max-width: 450px){
-        left: 5.96vw;
-        width: 30vw;
-    }
     @media screen and (max-width: $mobile){
         left: 15.96vw;
         width: 50vw;
@@ -127,20 +103,11 @@ h1{
     -webkit-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     -moz-box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
     font-family: $FuturaDemiC;
-    font-size: 0.85em;
-    line-height: 15px;
+    font-size: 1.05vw;
+    line-height: 1.05vw;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    @media screen and (max-width: 1100px){
-        font-size: 70%;
-    }
-    @media screen and (max-width: 850px){
-        font-size: 60%;
-    }
-    @media screen and (max-width: 450px){
-        display: none;
-    }
     @media screen and (max-width: $mobile){
         display: none;
     }
@@ -154,15 +121,15 @@ h1{
 .home{
     display: flex;
     width: 100%;
-    height: 755px;
+    height: 52.45vw;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
         height: 476px;
     }
 }
 .home__article{
-    width: 1358px;
-    height: 707px;
+    width: 97vw;
+    height: 49.1vw;
     background-image:-webkit-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_4.3.png');
     background-image:-moz-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_4.3.png');
     background-image:-ms-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_4.3.png');
@@ -175,47 +142,40 @@ h1{
         background-image:-moz-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_4.7.png');
         background-image:-ms-linear-gradient(45deg, #13131380, #13131380), url('../assets/image_4.7.png');
     }
-    h2{
-        position: relative;
-        left: 4vw;
-        top: 22vh;
-        width: 676px;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 40px;
-        line-height: 53px;
-        text-transform: uppercase;
-        font-family: $YesevaOne;
-        color: #FFFFFF;
-        @media screen and (max-width: 550px){
-            font-size: 30px;
-            line-height: 132.83%;
-        }
-        @media screen and (max-width: $mobile){
-            top: 10vh;
-            font-size: 23px;
-            line-height: 132.83%;
-        }
+}
+.home__header{
+    position: relative;
+    left: 4vw;
+    top: 26%;
+    width: 47vw;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 3vw;
+    line-height: 3.5vw;
+    text-transform: uppercase;
+    font-family: $YesevaOne;
+    color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        top: 10vh;
+        width: 339px;
+        font-size: 23px;
+        line-height: 132.83%;
     }
-    p{
-        position: relative;
-        left: 4vw;
-        top: 25vh;
-        width: 462px;
-        font-family: $FuturaBookC;
-        font-size: 22px;
-        line-height: 30px;
-        color: #FFFFFF;
-        @media screen and (max-width: $mobile){
-            top: 12vh;
-            width: 313px;
-            font-size: 18px;
-            line-height: 135.84%;
-        }
-        @media screen and (max-width: 550px){
-            font-size: 20px;
-            line-height: 132.83%;
-        }
+}
+.home__header-text{
+    position: relative;
+    left: 4vw;
+    top: 31%;
+    width: 32.1vw;
+    font-family: $FuturaBookC;
+    font-size: 1.6vw;
+    line-height: 1.9vw;
+    color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        top: 12vh;
+        width: 313px;
+        font-size: 18px;
+        line-height: 135.84%;
     }
 }
 .article_span{
@@ -223,70 +183,76 @@ h1{
 }
 .home__instagram-button{
     position: relative;
-    width: 82px;
-    height: 707px;
+    width: 5.8vw;
+    height: 49.1vw;
     background-color: $bg-color;
     border: 0;
     color: $text-color;
-    @media screen and (max-width: 700px){
+    @media screen and (max-width: $mobile){
         display: none;
-    }
-    @media screen and (max-width: $tablet){
-        width:100px;
     }
     
     p{
         position: absolute;
-        top: 32vh;
+        top: 35%;
         left: 0.2vw;
         font-family: $FuturaDemiC;
-        font-size: 14px;
-        line-height: 16px;
+        font-size: 1vw;
+        line-height: 1.1vw;
         transform: rotate(90deg);
+        @media screen and (max-width: $tablet){
+            top: 32%;
+            left: -0.8vw;
+            font-size: 1.4vw;
+        }
         @media screen and (max-width: $mobile){
             display: none;
-        }
-        @media screen and (max-width: 900px){
-            left: -1.2vw;
         }
     }    
 }
 .home-button_line{
     position: absolute;
-    left: 1vw;
-    top: 44vh;
-    width: 51px;
-    border: 1.5px solid $text-color;
+    left: 1.1vw;
+    top: 49%;
+    width: 3.65vw;
+    border: 0.09vw solid #E3B873;
     background-color: $text-color;
     transform: rotate(90deg);
+}
+.home__button-container{
+    position: relative;
+    top: 37%;
     @media screen and (max-width: $mobile){
-        display: none;
-    }
-    @media screen and (max-width: 900px){
-        left: 0.2vw;
-        top: 48vh;
+        top: 27%;
     }
 }
 .home__button-calculate{
     position: relative;
     left: 4vw;
-    top: 30vh;
-    width: 207px;
-    height: 51px;
+    width: 14.55vw;
+    height: 3.58vw;
     border: $text-color;  
     border-radius: 2px;
     box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.3);
     background-color: $text-color;
+    @media screen and (max-width: $tablet){
+        font-size: 1vw;
+        line-height: 3.05vw;
+    }
     @media screen and (max-width: $mobile){
-        top: 16.5vh;
         width: 338.61px;
+        height: 51px;
     }
     a{
         font-family: $FuturaDemiC;
-        font-size: 13px;
-        line-height: 15px;
+        font-size: 0.9vw;
+        line-height: 1.05vw;
         text-align: center;
         color: #FFFFFF;
+        @media screen and (max-width: $mobile){
+            font-size: 13px;
+            line-height: 15px;
+        }
     }
     &:hover{
         -webkit-transform: scale(1.1);
@@ -297,80 +263,79 @@ h1{
 .home__button-submit{
     position: relative;
     left: 5vw;
-    top: 30vh;
-    width: 207px;
-    height: 51px;
+    width: 14.55vw;
+    height: 3.58vw;
     border: 1px solid #FFFFFF;
     border-radius: 2px;
     box-sizing: border-box;
     background-color: rgba(255, 255, 255, 0.01);
+    @media screen and (max-width: $tablet){
+        font-size: 1vw;
+        line-height: 3.05vw;
+    }
     @media screen and (max-width: $mobile){
         left: 4vw;
-        top: 19vh;
+        top: 3vh;
         width: 338.61px;
+        height: 51px;
     }
-    .submit-text-desktop{
-        font-family: $FuturaDemiC;
-        font-size: 13px;
-        line-height: 15px;
-        text-align: center;
-        color: #FFFFFF;
-        @media screen and (max-width: $mobile){
-            display: none;
-        }
-    }
-    .submit-text-mobile{
-        display: none;
-        @media screen and (max-width: $mobile){
-            display: inline;
-            font-family: $FuturaDemiC;
-            font-size: 13px;
-            line-height: 15px;
-            text-align: center;
-            color: #FFFFFF;
-        }
-    }
+    
     &:hover{
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
     }
 }
+.submit-text-desktop{
+    font-family: $FuturaDemiC;
+    font-size: 0.9vw;
+    line-height: 1.05vw;
+    text-align: center;
+    color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        display: none;
+    }
+}
+.submit-text-mobile{
+    display: none;
+    @media screen and (max-width: $mobile){
+        display: inline;
+        font-family: $FuturaDemiC;
+        font-size: 13px;
+        line-height: 15px;
+        text-align: center;
+        color: #FFFFFF;
+    }
+}
 .button-scroll{
     position: relative;
     right: 6%;
-    top: 57%;
-    width: 247px;
-    height: 97px;
+    top: 58%;
+    width: 17.2vw;
+    height: 6.75vw;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
         display: none;
     }
-    @media screen and (max-width: 700px){
-        right: 0;
-    }
-    @media screen and (max-width: 550px){
-        top: 62%;
-    }
-    
+        
     a{
         position: relative;
-        top: 4.2vh;
+        top: 2.5vw;
         left: 3.5vw;
         display: flex;
         align-items: center;
-        width: 150px;
-        height: 29px;
+        width: 11vw;
+        height: 2vw;
         font-family: $YesevaOne;
         font-style: normal;
         font-weight: normal;
-        font-size: 14px;
-        line-height: 19px;
+        font-size: 1vw;
+        line-height: 1.2vw;
         text-transform: uppercase;
         color: #FFFFFF;
         img{
-            width: 29px;
-            height: 29px;
+            width: 2vw;
+            height: 2vw;
             margin-left: 1.2vw;
         }
         &:hover{
@@ -386,11 +351,9 @@ h1{
 .projects{
     display: flex;
     width: 100%;
-    height: 1074px;
+    height: 74.6vw;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
-        // display: grid;
-        // grid-template-areas: "header" "slider";
         flex-direction: column;
         height: 1040px;
     }
@@ -403,10 +366,10 @@ h1{
                          "control control";
     grid-template-rows: 2fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
-    width: 426px;
-    height: 482px;
+    width: 30vw;
+    height: 33.5vw;
     padding-left: 7vw;
-    padding-top: 16vh;
+    padding-top: 9%;
     @media screen and (max-width: $mobile){
         grid-template-areas: "header header" "slider slider" "city area" "time cost";
         grid-template-rows: 2fr 250px 1fr 1fr;
@@ -422,8 +385,8 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
+    font-size: 2vw;
+    line-height: 2.4vw;
     letter-spacing: -0.07em;
     text-transform: uppercase;
     color: $text-color;
@@ -433,46 +396,31 @@ h1{
         text-align: center;
         letter-spacing: -0.07em;
     }
-    @media screen and (max-width: 1000px){
-        font-size: 22px;
-    }
 }
 .projects_description-line{
     position: relative;
     bottom: 9%;
-    left: 38%;
-    width: 92px;
-    border: 1px solid $text-color;
+    left: 13vw;
+    width: 6.4vw;
+    border: 0.1vw solid $text-color;
     background-color: $text-color;
     @media screen and (max-width: $mobile){
         display: none;
-    }
-    @media screen and (max-width: 1100px){
-        left: 48%;
-        width: 82px;
-    }
-    @media screen and (max-width: 700px){
-        left: 58%;
-        width: 62px;
     }
 }
 .projects__description-text{
     margin-top: 4%;
     margin-bottom: 11%;
     font-family: $FuturaBookC;
-    font-size: 18px;
-    line-height: 29px;
+    font-size: 1.2vw;
+    line-height: 2vw;
     color: #FFFFFF;
     
-    @media screen and (max-width: 1000px){
-        font-size: 15px;
-    }
     @media screen and (max-width: $mobile){
         width: 311px;
         padding-left: 9%;
         font-size: 14px;
         line-height: 158.48%;
-        /* or 22px */
         text-align: center;
     }
 }
@@ -485,12 +433,10 @@ h1{
         font-style: normal;
         font-weight: normal;
         font-size: 1.6vw;
-        line-height: 25px;
+        line-height: 2vw;
         text-transform: uppercase;
         color: $text-color;
-        @media screen and (max-width: 1000px){
-            font-size: 15px;
-        }
+        
         @media screen and (max-width: $mobile){
             font-size: 14px;
             line-height: 138.6%;
@@ -498,12 +444,11 @@ h1{
     }
     p{
         font-family: $FuturaBookC;
-        font-size: 15px;
-        line-height: 20px;
+        font-size: 1.05vw;
+        line-height: 1.5vw;
         color: #FFFFFF;
-        
-        @media screen and (max-width: 1000px){
-            font-size: 14px;
+        @media screen and (max-width: $tablet){
+            font-size: 1.2vw;
         }
         @media screen and (max-width: $mobile){
             font-size: 14px;
@@ -535,6 +480,17 @@ h1{
         padding-left: 11%;
     }
 }
+.projects__slider{
+    position: relative;
+    top: 6%;
+    left: 5%;
+    width: 920px;
+    @media screen and (max-width: $mobile){
+        grid-area: slider;
+        width: 340px;
+        height: 240px;
+    }
+}
 .projects__descripion-cost{
     grid-area: cost;
     margin-bottom: 18%;
@@ -549,7 +505,6 @@ h1{
         display: none;
     }
 }
-
 .projects__slider-label {
     display: flex;
     align-items: center;
@@ -558,9 +513,9 @@ h1{
     }
     label{
         display: inline-block;
-        width: 8px;
-        height: 8px;
-        margin: 0 8px;
+        width: 0.7vw;
+        height: 0.7vw;
+        margin: 0 0.7vw;
         border-radius: 30px;
         cursor: pointer;
         background: rgba(255, 255, 255, 0.3);
@@ -578,9 +533,13 @@ h1{
     background-color: white;
 }
 .slider-control_left{
+    width: 3vw;
+    height: 1.4vw;
     margin-right: 10px; 
 }
 .slider-control_right{
+    width: 3vw;
+    height: 1.4vw;
     margin-left: 10px; 
 }
 
@@ -604,18 +563,9 @@ h1{
             border-bottom: 1px solid $text-color;
             color: $text-color;
         }
-    }
-}
-.projects__slider{
-    position: relative;
-    top: 6%;
-    left: 5%;
-    width: 920px;
-    @media screen and (max-width: $mobile){
-        top: -28%;
-        grid-area: slider;
-        width: 340px;
-        height: 240px;
+        @media screen and (max-width: $tablet){
+            font-size: 1.4vw;
+        }
     }
 }
 .slides1,
@@ -644,22 +594,13 @@ h1{
 .slider_button-right{
     position: absolute;
     left: 85%;
-    top: 31vh;
-    width: 6.5vh;
-    height: 6.5vh;
+    top: 26%;
+    width: 3.8vw;
+    height: 3.8vw;
     border: 0;
     border-radius: 50%;
     background-color: $text-color;
-    @media screen and (max-width: 900px) {
-        left: 53vw;
-        top: 27vh;
-        width: 5.5vh;
-        height: 5.5vh;
-    }
-    @media screen and (max-width: 600px) {
-        left: 51vw;
-        top: 21vh;
-    }
+
     @media screen and (max-width:$mobile) {
         left: 87%;
         top: 41%;
@@ -669,6 +610,14 @@ h1{
         border-radius: 50%;
         background-color: $text-color;
         img{
+            width: 6px;
+
+        }
+    }
+
+    img{
+        width: 1vw;
+        @media screen and (max-width:$mobile) {
             width: 6px;
         }
     }
@@ -697,14 +646,11 @@ h1{
 
 .section_online-control{
     position: absolute;
-    top: 1540px;
+    top: 108vw;
     left: 22vw;
     width: 57vw;
     min-width: 340px;
-    height: 980px;
-    @media screen and (max-width: 500px) {
-        left: 18vw;
-    }
+    height: 42vw;
     @media screen and (max-width:$mobile) {
         top: 1225px;
         left: 0;
@@ -716,13 +662,15 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.45vw;
+    line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
     @media screen and (max-width:$mobile) {
         margin-bottom: 5%;
+        font-size: 22px;
+        line-height: 138.6%;    
     }
 }
 .online-control_group{
@@ -769,12 +717,14 @@ h1{
     position: absolute;
     left: 48%;
     top: -5%;
-    width: 55px;
-    height: 0.5px;
-    border: 0.5px solid $text-color;
+    width: 4vw;
+    height: 0.05vw;
+    border: 0.05vw solid #E3B873;
+    background-color: $text-color;
     @media screen and (max-width:$mobile) {
         position: relative;
         left: 41%;
+        width: 55px;
     }
 }
 .online-control_text{
@@ -785,12 +735,9 @@ h1{
     width: 47.4vw;
     font-family: $FuturaBookC;
     font-size: 1.4vw;
-    line-height: 34px;
+    line-height: 2.2vw;
     text-align: center;
     color: $bg-color;
-    @media screen and (max-width: 900px) {
-        margin-top: 10%;
-    }
     @media screen and (max-width:$mobile) {
         left: 0;
         width: 340px;
@@ -903,7 +850,6 @@ h1{
 }
 .submit-form__checkbox{
   display: none;
-
 }
 .submit-form__checkbox-label:after {
     position: absolute;
@@ -914,19 +860,27 @@ h1{
 	height: 11px;
 	width: 11px;
     outline:1px solid $text-color;
-    border-radius: 1px;
+    @media screen and (max-width: $mobile){
+        top: 12%;
+        width: 18px;
+        height: 18px;
+    }
 }
 .submit-form__checkbox:checked + .submit-form__checkbox-label:after {
     content: '\2714';
     width:11px;
 	height:11px;
 	outline:1px solid $text-color;
-    border-radius: 1px;
     background-color: $text-color;
-    font-size: 8px;
-    line-height: 112%;
+    font-size: 10px;
+    line-height: 97%;
     color: #FFFFFF;
     text-align: center;
+    @media screen and (max-width: $mobile){
+        width: 18px;
+        height: 18px;
+        font-size: 14px;
+    }
 }
 .submit-form__checkbox-label{
     position: absolute;
@@ -935,6 +889,10 @@ h1{
     font-family: $FuturaBookC;
     font-size: 1.2vw;
     line-height: 22px;
+    @media screen and (max-width: $tablet){
+        font-size: 1.4vw;
+        line-height: 16px;
+    }
     @media screen and (max-width:$mobile) {
         position: relative;
         top: 0;
@@ -949,7 +907,7 @@ h1{
 .measurement{
     position: relative;
     width: 100%;
-    height: 1900px;
+    height: 132vw;
     @media screen and (max-width: $mobile){
         height: 2030px;
     }
@@ -957,7 +915,7 @@ h1{
 
 .article__type-repair{
     position: absolute;
-    top: 80px;
+    top: 5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -970,12 +928,15 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.7vw;
+    line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
     color: #181818;
-
+    @media screen and (max-width: $mobile){
+        font-size: 22px;
+        line-height: 138.6%;
+    }
 }
 .type-repair__group{
     position: relative;
@@ -984,8 +945,8 @@ h1{
     align-items: center; 
     width: 257px;
     margin-top: 2%;
-    @media screen and (max-width: 800px) {
-        left: 42.5%;
+    @media screen and (max-width: $tablet) {
+        left: 44.5%;
     }
     @media screen and (max-width:$mobile) {
         left: 34.4%;
@@ -993,12 +954,15 @@ h1{
     }
 }
 .type-repair__line{
-    width: 32px;
-    height: 0.5px;
-    margin-left: 2%;
+    width: 2.2vw;
+    height: 0.05vw;
     margin-right: 2%;
-    border: 0.5px solid $text-color;
+    margin-left: 2%;
+    border: 0.05vw solid $text-color;
     background-color: $text-color;
+    @media screen and (max-width: $mobile){
+        width: 32px;
+    }
 }
 .types-design{
     display: flex;
@@ -1006,6 +970,7 @@ h1{
     width: 100%;
     height: 616px;
     margin-top: 4%;
+    margin-left: 1%;
     @media screen and (max-width:$mobile) {
         position: absolute;
         top: -14%;
@@ -1120,13 +1085,9 @@ h1{
 
 .circle-request{
     position: relative;
-    top: 980px;
+    top: 51%;
     display: flex;
-    height: 683px;
-    @media screen and (max-width:$tablet) {
-        top: 580px;
-        flex-direction: column;
-   }
+    height: 48vw;
     @media screen and (max-width:$mobile) {
          display: none;
     }
@@ -1222,7 +1183,8 @@ h1{
     top: 31%;
     left: 58%;
     @media screen and (max-width:$tablet) {
-        top: 32%;
+        top: 33%;
+        left: 60%;
    }
 }
 .circle-container3{
@@ -1239,7 +1201,7 @@ h1{
     top: 84%;
     left: 49%;
     @media screen and (max-width:$tablet) {
-        top: 88%;
+        top: 86%;
    }
 }
 .request-form{
@@ -1258,26 +1220,21 @@ h1{
         margin-top: 5%;
         font-family: $FuturaDemiC;
         font-size: 1.4vw;
-        line-height: 25px;
+        line-height: 2.05vw;
         text-align: center;
         color: #FFFFFF;
         @media screen and (max-width:$tablet) {
-            font-size: 2.4vw;
+            font-size: 1.8vw;
         }
     }
-    @media screen and (max-width:$tablet) {
-        left: 24%;
-        width: 52.2vw;
-        height: 49.35vw;
-   }
 }
 .request-form__label{
     margin-top: 2.5vw;
     margin-bottom: 1%;
     margin-left: 9%;
     font-family: $FuturaBookC;
-    font-size: 15px;
-    line-height: 20px;
+    font-size: 1.05vw;
+    line-height: 1.4vw;
     color: rgba(255, 255, 255, 0.5);
 }
 .request-form__input{
@@ -1288,25 +1245,30 @@ h1{
     border-bottom: 2px solid rgba(255, 255, 255, 0.15);
     background-color: $bg-color;
     font-family: $FuturaMediumC;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 2vw;
     color: #FFFFFF;
     @media screen and (max-width:$tablet) {
-        width: 38.5vw;
-        height: 3.1vw;
+        font-size: 1.4vw;
     }
 }
 .request-form__input::placeholder { 
     font-family: $FuturaMediumC;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 2 vw;
     color: #FFFFFF;
+    @media screen and (max-width:$tablet) {
+        font-size: 1.4vw;
+    }
 }
 .request-form__input::-webkit-input-placeholder { /* Edge */
     font-family: $FuturaMediumC;
-    font-size: 18px;
-    line-height: 25px;
+    font-size: 1.2vw;
+    line-height: 2vw;
     color: #FFFFFF;
+    @media screen and (max-width:$tablet) {
+        font-size: 1.4vw;
+    }
 }
 .request-form__button-submit{
     width: 14.8vw;
@@ -1317,19 +1279,12 @@ h1{
     background-color: #E3B873;
     font-family: "FuturaDemiC"," Verdana",sans-serif;
     font-size: 0.95vw;
-    line-height: 18px;
+    line-height: 1.2vw;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
-    @media screen and (max-width: 1350px){
-        top: 80%;
-    }
     @media screen and (max-width:$tablet) {
-        width: 14.8vw;
-        height: 3.55vw;
-        margin-top: 7vw;
-        margin-left: 55%;
-        font-size: 1vw;
+        margin-top: 5vw;
     }
 }
 
@@ -1338,25 +1293,22 @@ h1{
 }
 .request-form__checkbox-label:after {
     position: absolute;
-    top: 34%;
+    top: 23%;
     left: -11%;
     content:'';
     display:block;
     height: 11px;
     width: 11px;
     outline:1px solid $text-color;
-    border-radius: 1px;
-    
 }
 .request-form__checkbox:checked + .request-form__checkbox-label:after {
     content: '\2714';
     width:11px;
     height:11px;
     outline:1px solid $text-color;
-    border-radius: 1px;
     background-color: $text-color;
-    font-size:8px;
-    line-height: 112%;
+    font-size: 10px;
+    line-height: 97%;
     color: #FFFFFF;
     text-align: center;
 }
@@ -1368,12 +1320,9 @@ h1{
     font-size: 1.1vw;
     line-height: 22px;
     color: #FFFFFF;
-    @media screen and (max-width: 1350px){
-        top: 80%;
-    }
     @media screen and (max-width:$tablet) {
         top: 75%;
-        font-size: 1.5vw;
+        font-size: 1.3vw;
     }
 }
 .piggy-bank{
@@ -1381,24 +1330,19 @@ h1{
     top: 20%;
     left: 10%;
     display: flex;
-    p{
-        width: 222px;
-        margin-top: 4%;        
-        font-family: $FuturaDemiC;
-        font-size: 1.5vw;
-        line-height: 25px;
-        color: #E3B873;
-        text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
-        @media screen and (max-width:$tablet) {
-            font-size: 2vw;
-        }
-    }
-    @media screen and (max-width:$tablet) {
-        left: 25%;
-    }
-    
 }
-  
+.piggy-bank__img{
+    width: 8vw;
+}
+.piggy-bank__text{
+    width: 17vw;
+    margin-top: 4%;        
+    font-family: $FuturaDemiC;
+    font-size: 1.5vw;
+    line-height: 2.05vw;
+    color: #E3B873;
+    text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}  
 
 .styles{
     display: flex;
@@ -1418,11 +1362,8 @@ h1{
     width: 26.1vw;
     padding-top: 9vw;
     padding-left: 10vw;
-    @media screen and (max-width: 1000px){
-        padding-top: 5vw;
-        padding-left: 7vw;
-    }
     @media screen and (max-width: $mobile){
+        width: 340px;
         padding-top: 0;
         padding-left: 0;
     }
@@ -1432,19 +1373,19 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 27px;
-    line-height: 37px;
+    font-size: 2vw;
+    line-height: 2.5vw;
     text-transform: uppercase;
     color: $text-color;
     @media screen and (max-width: $mobile){
         position: relative;
-        top: -310%;
+        bottom: 380%;
+        left: 10%;
+        width: 300px;
         margin-bottom: 0;
+        font-size: 22px;
+        line-height: 138.6%;
         text-align: center;
-    }
-    @media screen and (max-width: 1000px){
-        font-size: 20px;
-        line-height: 30px;
     }
 }
 .styles__article__list{
@@ -1509,7 +1450,7 @@ h1{
     display: none;
     @media screen and (max-width: $mobile){
         position: relative;
-        top: -100%;
+        bottom: 94%;
         left: 5%;
         display: inline;
         width: 340px;
@@ -1566,7 +1507,7 @@ h1{
 .design-project{
     position: relative;
     width: 100%;
-    height: 621px;
+    height: 43.15vw;
     @media screen and (max-width: $mobile){
         height: 1910px;
         background-color: $bg-color;
@@ -1578,13 +1519,15 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.55vw;
+    line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
     color: #181818;
     @media screen and (max-width: $mobile){
         top: -2%;
+        font-size: 22px;
+        line-height: 138.6%;
         color: #FFFFFF;
     }
 }
@@ -1594,6 +1537,9 @@ h1{
     left: 46%;
     display: flex;
     align-items: center;
+    @media screen and (max-width:$tablet) {
+        left: 43%;
+    }
     @media screen and (max-width: $mobile){
         top: 1%;
         left: 36%;
@@ -1616,8 +1562,13 @@ h1{
     font-size: 1.39vw;
     line-height: 2vw;
     text-align: center;
-
     color: $bg-color;
+    @media screen and (max-width:$tablet) {
+        top: 48%;
+        left: 25%;
+        width: 50vw;
+        font-size: 1.5vw;
+    }
     @media screen and (max-width: $mobile){
         top: 4%;
         left: 11%;
@@ -1635,6 +1586,9 @@ h1{
     display: flex;
     justify-content: space-evenly;
     width: 90%;
+    @media screen and (max-width:$tablet) {
+        top: 56%;
+    }
     @media screen and (max-width: $mobile){
         top: 10%;
         height: 1530px;
@@ -1681,14 +1635,16 @@ h1{
     background-color: #FFFFFF;
     @media screen and (max-width: $mobile){
         width: 270px;
+        height: 177px;
         margin-left: 0;
     }
     .design-project__rectangle{
         @media screen and (max-width: $mobile){
-            margin-top: 24%;
+            margin-top: 11%;
         }
     }
 }
+
 .design-project__section-article2{
     width: 22.9vw;
     height: 20vw;
@@ -1699,6 +1655,11 @@ h1{
         width: 270px;
         height: 241px;
         margin-left: 0;
+    }
+    .design-project__rectangle{
+        @media screen and (max-width: $mobile){
+            margin-top: 11%;
+        }
     }
 }
 .design-project__section-article3{
@@ -1711,6 +1672,11 @@ h1{
         width: 270px;
         height: 241px;
         margin-left: 0;
+    }
+    .design-project__rectangle{
+        @media screen and (max-width: $mobile){
+            margin-top: 11%;
+        }
     }
 }
 .design-project__section-header{
@@ -1762,9 +1728,8 @@ h1{
         font-style: normal;
         font-weight: normal;
         font-size: 1.3vw;
-        line-height: 25px;
+        line-height: 2vw;
         text-transform: uppercase;
-        
         color: #FFFFFF;
         @media screen and (max-width: $mobile){
             padding-left: 0;
@@ -1784,20 +1749,19 @@ h1{
 
 .goal{
     width: 100%;
-    height: 1615.53px;
+    height: 112.2vw;
     background-color: $bg-color;
-    @media screen and (max-width: 1000px){
-        height: 1147px;
-    }
     @media screen and (max-width: $mobile){
-        height: 2085px;
+        height: 2080px;
     }
-    
 }
 .goal__content{
     position: relative;
     top: 26%;
     padding-left: 7%;
+    @media screen and (max-width:$tablet) {
+        top: 30%;
+    }
     @media screen and (max-width: $mobile){
         display: none;
     }
@@ -1805,7 +1769,7 @@ h1{
 .goal__header-text{
     font-family: $FuturaDemiC;
     font-size: 1.05vw;
-    line-height: 21px;
+    line-height: 1.4vw;
     text-transform: uppercase;
     
     color: #FFFFFF;
@@ -1816,24 +1780,24 @@ h1{
     font-style: normal;
     font-weight: normal;
     font-size: 1.9vw;
-    line-height: 37px;
+    line-height: 2.5vw;
     text-transform: uppercase;
-
     color: $text-color;
 }
 .goal__header-line{
     position: absolute;
     top: 11%;
     left: 21%;
-    width: 91px;
-    height: 0.5px;
-    border: 0.5px solid $text-color;
+    width: 6.35vw;
+    height: 0.1vw;
+    border: 0.04vw solid $text-color;
+    background-color: $text-color;
 }
 .goal__slider{
     display: flex;
 }
 .goal__slider-text{
-    width: 465px;
+    width: 32.3vw;
 }
 .goal__slider-number{
     padding-top: 15%;
@@ -1842,30 +1806,35 @@ h1{
     font-style: normal;
     font-weight: normal;
     font-size: 1.25vw;
-    line-height: 25px;
+    line-height: 1.6vw;
     text-transform: uppercase;
     color: #FFFFFF;   
 }
 .goal__slider-header{
     padding-bottom: 4%;
-    width: 250px;
+    width: 17.4vw;
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
     font-size: 1.05vw;
     line-height: 1.6vw;
     text-transform: uppercase;
-
     color: $text-color;
+    @media screen and (max-width:$tablet) {
+        width: 20vw;
+        font-size: 1.35vw;
+    }
 }
 .goal__slider-paragraph{
     padding-bottom: 4%;
-    width: 330px;
+    width: 23vw;
     font-family: $FuturaBookC;
     font-size: 1.05vw;
     line-height: 1.8vw;
-    
     color: #FFFFFF;
+    @media screen and (max-width:$tablet) {
+        font-size: 1.35vw;
+    }
 }
 .goal__slider-control input{
     display: none;
@@ -1876,9 +1845,9 @@ h1{
     align-items: center;
     label{
         display: inline-block;
-        width: 8px;
-        height: 8px;
-        margin: 0 8px;
+        width: 0.7vw;
+        height: 0.7vw;
+        margin: 0 0.7vw;
         border-radius: 30px;
         cursor: pointer;
         background: rgba(255, 255, 255, 0.3);
@@ -1904,10 +1873,14 @@ h1{
     background-color: white;
 }
 .goal__slider-control_left{
-    margin-right: 20px; 
+    width: 2.7vw;
+    height: 1.2vw;
+    margin-right: 1vw;
 }
 .goal__slider-control_right{
-    margin-left: 20px; 
+    width: 2.7vw;
+    height: 1.2vw;
+    margin-left: 1vw;
 }
 .goal__slider-navigation-control input{
     display: none;
@@ -1916,29 +1889,28 @@ h1{
     display: grid;
     grid-template-areas: "ar1 ar2 ar3" "ar4 ar5 ar6";
     grid-template-columns: repeat(3, 45%);
-    grid-template-rows: 106px 1fr;
+    grid-template-rows: 6vw 1fr;
     width: 94%;
-    font-family: $FuturaBookC;
+    font-family: "FuturaBookC"," Verdana",sans-serif;
     font-size: 1.05vw;
-    line-height: 20px;
+    line-height: 1.4vw;
     color: #FFFFFF70;
-    @media screen and (max-width: 1200px){
-        grid-template-columns: repeat(3, 20.4vw);
-        grid-template-rows: 9vw 1fr;
-    }
     span{
         padding-bottom: 1%;
         border-bottom: 1px solid $text-color;
         font-family: $YesevaOne;
         font-style: normal;
         font-weight: normal;
-        line-height: 27px;
+        line-height: 2vw;
         text-transform: uppercase;
     }
     label{
         width: 8.8vw;
     }
-}
+    @media screen and (max-width:$tablet) {
+        font-size: 1.2vw;
+    }
+}   
 .goal__slider-navigation__label1{
     grid-area: ar1;
 }
@@ -1957,7 +1929,6 @@ h1{
 .goal__slider-navigation__label6{
     grid-area: ar6;
 }
-  
 #goal__nav1:checked~.goal__slider-navigation__label label[for="goal__nav1"] {
     color: #FFFFFF;
 }
@@ -1990,20 +1961,21 @@ h1{
 .team{
     position: relative;
     top: 32%;
+    @media screen and (max-width:$tablet) {
+        top: 36%;
+    }
     @media screen and (max-width: $mobile){
         top: 4%;
     }
-    
 }
 .team__header{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.55vw;
+    line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
-    
     color: #FFFFFF;
     @media screen and (max-width: $mobile){
         font-size: 22px;
@@ -2013,20 +1985,31 @@ h1{
 .team__header-group{
     display: flex;
     align-items: center;
-    padding-left: 45.4%;
+    padding-left: 44.5%;
     padding-top: 2%;
     padding-bottom: 2%;
+    @media screen and (max-width: $tablet){
+        padding-left: 43%;
+    }
     @media screen and (max-width: $mobile){
-        padding-left: 32%;
+        padding-left: 35%;
         padding-top: 4%;
         padding-bottom: 4%;
     }
 }
 .team__header-line{
-    margin: 0 10px;
-    width: 32px;
-    height: 0.5px;
-    border: 0.5px solid $text-color;
+    margin: 0 1vw;
+    width: 2.25vw;
+    height: 0.05vw;
+    border: 0.05vw solid $text-color;
+    background-color: $text-color;
+    @media screen and (max-width: $tablet){
+        width: 3vw;
+    }
+    @media screen and (max-width: $mobile){
+        width: 32px;
+        height: 1px;
+    }
 }
 .team__header-text{
     width: 31vw;
@@ -2062,7 +2045,7 @@ h1{
     height: 24.89vw;
     @media screen and (max-width: $mobile){
         width: 304px;
-        background-size: cover;
+        height: 357px;
     }
 }
 .team-person1{
@@ -2092,6 +2075,14 @@ h1{
         padding-top: 15%;
         width: 3vw;
         height: 3vw;
+        @media screen and (max-width: $mobile){
+            width: 44px;
+            height: 44px;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        width: 70px;
+        height: 70px;
     }
 }
 .team-person__article{
@@ -2101,6 +2092,8 @@ h1{
     margin-top: 76%;
     background-color: #FFFFFF;
     @media screen and (max-width: $mobile){
+        width: 233px;
+        height: 137px;
         margin-left: 12%;
     }
 }
@@ -2113,10 +2106,11 @@ h1{
     font-size: 1.25vw;
     line-height: 25px;
     text-align: center;
-    
     color: #181818;
     @media screen and (max-width: $mobile){
         top: 12%;
+        font-size: 18px;
+        line-height: 25px;
     }
 }
 .team-person__text{
@@ -2129,6 +2123,8 @@ h1{
     color: #959595;
     @media screen and (max-width: $mobile){
         top: 17%;
+        font-size: 18px;
+        line-height: 26px;
     }
 }
 .team-person__experience{
@@ -2142,24 +2138,28 @@ h1{
         font-style: normal;
         font-weight: normal;
         font-size: 1vw;
-        line-height: 20px;
+        line-height: 1.6vw;
         text-align: center;
         text-transform: uppercase;
-
         color: #FFFFFF;
+        @media screen and (max-width: $mobile){
+            font-size: 13px;
+            line-height: 20px;
+        }
+    }
+    @media screen and (max-width: $mobile){
+        width: 233px;
+        height: 44px;
     }
 }
 .team__line{
-    width: 55px;
-    height: 0.5px;
-    margin-top: 7%;
+    width: 4vw;
+    height: 0.05vw;
+    margin-top: 8%;
     margin-bottom: 2%;
     margin-left: 47%;
-    border: 0.5px solid $text-color;
-    @media screen and (max-width: $tablet){
-        margin-top: 11%;
-        margin-left: 46%;
-    } 
+    border: 0.05vw solid $text-color;
+    background-color: $text-color;
     @media screen and (max-width: $mobile){
         display: none;
     }
@@ -2190,8 +2190,8 @@ h1{
     font-family: $YesevaOne;
     font-style: normal;
     font-weight: normal;
-    font-size: 20px;
-    line-height: 28px;
+    font-size: 1.55vw;
+    line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
     color: #181818;
@@ -2202,13 +2202,17 @@ h1{
     margin-left: 44.5%;
     margin-top: 1%;
     margin-bottom: 1%;
+    @media screen and (max-width: $tablet){
+        margin-left: 43.5%;
+    }
 }
 .clients__header-line{
-    width: 32px;
-    height: 0.5px;
+    width: 2.2vw;
+    height: 0.05vw;
     margin-right: 2%;
     margin-left: 2%;
-    border: 0.5px solid $text-color;
+    border: 0.05vw solid $text-color;
+    background-color: $text-color;
 }
 .clients__header-text{
     width: 28vw;
@@ -2311,10 +2315,8 @@ h1{
     background:-webkit-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
     background:-moz-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
     background:-ms-linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%), url('../assets/image_7.2.png');
-    @media screen and (max-width: 950px){
-        height: 700px;
-    }
     @media screen and (max-width: $mobile){
+        height: 950px;
         background: $bg-color;
     }
 }
@@ -2324,8 +2326,9 @@ h1{
     width: 61.35vw;
     height: 31vw;
     background-color: $bg-color;
-    @media screen and (max-width: 900px){
-        bottom: 13%;
+    @media screen and (max-width: $tablet){
+        bottom: 29%;
+        height: 34vw;
     }
     @media screen and (max-width: $mobile){
        width: 375px;
@@ -2357,15 +2360,24 @@ h1{
     line-height: 2vw;
     text-align: center;
     text-transform: uppercase;
-
     color: #FFFFFF;
+    @media screen and (max-width: $mobile){
+        font-size: 20px;
+        line-height: 28px;
+     }
 }
 .form-questions__label{
     font-family: $FuturaBookC;
     font-size: 1.05vw;
     line-height: 1.5vw;
-    
     color: rgba(255, 255, 255, 0.5);
+    @media screen and (max-width: $tablet){
+        font-size: 1.2vw;
+    }
+    @media screen and (max-width: $mobile){
+        font-size: 15px;
+        line-height: 20px;
+     }
 }
 .form-questions__input{
     width: 16.1vw;
@@ -2377,12 +2389,25 @@ h1{
     font-size: 1.25vw;
     line-height: 24px;
     color: #FFFFFF;  
+    @media screen and (max-width: $tablet){
+        font-size: 1.4vw;
+    }
     @media screen and (max-width: $mobile){
         width: 340px;
+        height: 31px;
+        font-size: 18px;
+        line-height: 24px;
     }  
 }
 .form-questions__input::placeholder{
     color: #FFFFFF;
+    @media screen and (max-width: $tablet){
+        font-size: 1.4vw;
+    }
+    @media screen and (max-width: $mobile){
+        font-size: 18px;
+        line-height: 24px;
+    }  
 }
 .form-questions__check{
     position: relative;
@@ -2391,8 +2416,13 @@ h1{
     width: 23.1vw;
     margin-top: 6%;
     margin-bottom: 4%;
+    @media screen and (max-width: $tablet){
+        width: 30vw;
+    }
     @media screen and (max-width: $mobile){
         justify-self: start;
+        width: 340px;
+        margin-top: 0;
     }
 }
 .form-questions__checkbox{
@@ -2407,23 +2437,28 @@ h1{
     height: 11px;
     width: 11px;
     outline:1px solid $text-color;
-    border-radius: 1px;
     @media screen and (max-width: $mobile){
         left: 0;
+        top: 8%;
+        width: 18px;
+        height: 18px;
     }
-    
 }
 .form-questions__checkbox:checked + .form-questions__checkbox-label:after {
     content: '\2714';
     width:11px;
     height:11px;
     outline:1px solid $text-color;
-    border-radius: 1px;
     background-color: $text-color;
-    font-size:8px;
-    line-height: 112%;
+    font-size: 10px;
+    line-height: 97%;
     color: #FFFFFF;
     text-align: center;
+    @media screen and (max-width: $mobile){
+        width: 18px;
+        height: 18px;
+        font-size:12px;
+    }
 }
 .form-questions__checkbox-label{
     margin-left: 15%;
@@ -2431,8 +2466,13 @@ h1{
     font-size: 1.1vw;
     line-height: 22px;
     color: #FFFFFF;
+    @media screen and (max-width: $tablet){
+        font-size: 1.3vw;
+    }
     @media screen and (max-width: $mobile){
         margin-left: 7%;
+        font-size: 16px;
+        line-height: 22px;
     }
 }
 .form-questions__button-submit{
@@ -2447,13 +2487,17 @@ h1{
     line-height: 26px;
     text-align: center;
     text-transform: uppercase;
-    
     color: #FFFFFF;
+    @media screen and (max-width: $tablet){
+        font-size: 1.2vw;
+    }
     @media screen and (max-width: $mobile){
         width: 340px;
         height: 51px;
         justify-self: start;
         margin-left: 1%;
+        font-size: 15px;
+        line-height: 26px;
     }
 }
 .form-questions__label-name{
@@ -2483,11 +2527,11 @@ h1{
     align-items: center;
     width: 41vw;
     height: 10.8vw;
-    @media screen and (max-width: 950px){
-        top: -7%;
+    @media screen and (max-width: $tablet){
+        top: -24%;
     }
     @media screen and (max-width: $mobile){
-        top: 18%;
+        top: 23%;
         flex-direction: column-reverse;
         width: 340px;
     }
@@ -2569,7 +2613,7 @@ footer{
     display: flex;
     align-items: center;
     width: 100%;
-    height: 133px;
+    height: 9.3vw;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
         display: none;
@@ -2579,7 +2623,7 @@ footer{
     position: relative;
     left: 5.7vw;
     font-size: 1vw;
-    line-height: 16px;
+    line-height: 1.1vw;
     font-family: $FuturaDemiC;
     text-transform: uppercase;
     color: $text-color;
@@ -2589,21 +2633,14 @@ footer{
     left: 10.84vw;
     display: flex; 
     width: 46vw;
-    @media screen and (max-width: 1100px){
-        left: 8.84vw;
-        flex-wrap: wrap;
-    }
     a{
-        font-size: 90%;
+        font-size: 1.05vw;
         line-height: 16px;
         font-family: FuturaBookC;
         color: #FFFFFF;
         text-transform: uppercase;
         &:hover{
             color: $text-color;
-        }
-        @media screen and (max-width: 1100px){
-            font-size: 70%;
         }
     }
     li{
@@ -2615,21 +2652,11 @@ footer{
     left: 12.96vw;
     width: 9vw;
     font-family: $FuturaDemiC;
-    font-size: 14px;
+    font-size: 1.05vw;
     line-height: 16px;
     text-align: right;
     text-decoration-line: underline;
     color: $text-color;
-    @media screen and (max-width: 1100px){
-        font-size: 70%;
-    }
-    @media screen and (max-width: 850px){
-        left: 10.96vw;
-    }
-    @media screen and (max-width: 450px){
-        left: 5.96vw;
-        width: 30vw;
-    }
 }
 .footer__request-call{
     position: relative;
@@ -2643,8 +2670,8 @@ footer{
     border: 0;
     border-radius: 2px;
     font-family: $FuturaDemiC;
-    font-size: 0.85em;
-    line-height: 15px;
+    font-size: 1.05vw;
+    line-height: 1.05vw;
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -2652,15 +2679,6 @@ footer{
         -webkit-transform: scale(0.85);
         -ms-transform: scale(0.85);
         transform: scale(0.85);
-    }
-    @media screen and (max-width: 1100px){
-        font-size: 70%;
-    }
-    @media screen and (max-width: 850px){
-        font-size: 60%;
-    }
-    @media screen and (max-width: 450px){
-        display: none;
     }
 }
 
