@@ -5,7 +5,7 @@ $FuturaBookC: 'FuturaBookC',' Verdana', sans-serif;
 $FuturaMediumC: 'FuturaMediumC',' Verdana', sans-serif;
 $ProximaNova: 'ProximaNova', ' Verdana', sans-serif;
 $YesevaOne :'Yeseva One',"Comic Sans MS", cursive;
-$mobile: 400px;
+$mobile: 500px;
 $tablet: 768px;
 
 @import url('./fonts.scss');
@@ -22,6 +22,10 @@ body{ background-color: $bg-color; }
     margin: 0 auto;
     overflow:  hidden;
     background-color: #ffffff;
+    @media screen and (max-width: $mobile){
+        margin: 0 auto;
+        width: 375px;
+    }
 }
 
 header{
@@ -83,8 +87,8 @@ h1{
     text-decoration-line: underline;
     color: $text-color;
     @media screen and (max-width: $mobile){
-        left: 15.96vw;
-        width: 50vw;
+        left: 37%;
+        width: 28vw;
         font-size: 12px;
         line-height: 14px;
         text-decoration-line: none;
@@ -258,6 +262,11 @@ h1{
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
+        @media screen and (max-width: $mobile){
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
     }
 }
 .home__button-submit{
@@ -284,6 +293,11 @@ h1{
         -webkit-transform: scale(1.1);
         -ms-transform: scale(1.1);
         transform: scale(1.1);
+        @media screen and (max-width: $mobile){
+            -webkit-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            transform: scale(1.05);
+        }
     }
 }
 .submit-text-desktop{
@@ -484,7 +498,7 @@ h1{
     position: relative;
     top: 6%;
     left: 5%;
-    width: 920px;
+    width: 66vw;
     @media screen and (max-width: $mobile){
         grid-area: slider;
         width: 340px;
@@ -867,10 +881,11 @@ h1{
     }
 }
 .submit-form__checkbox:checked + .submit-form__checkbox-label:after {
-    content: '\2714';
-    width:11px;
-	height:11px;
-	outline:1px solid $text-color;
+    content: '\2713';
+    width: 11px;
+    height: 11px;
+    padding-left: 0.1%;
+	outline: 2px solid $text-color;
     background-color: $text-color;
     font-size: 10px;
     line-height: 97%;
@@ -882,6 +897,7 @@ h1{
         font-size: 14px;
     }
 }
+
 .submit-form__checkbox-label{
     position: absolute;
     top: 53%;
@@ -1111,7 +1127,7 @@ h1{
     height: 44.2vw;
     border-radius: 100%;
     border: 5px solid #E3B873;
-    border-right: 10px solid #FFFFFF01;
+    border-right: 10px solid rgba(255,255,255, $alpha: 0.1);;
 }
 .background-circle2{
     position: absolute;
@@ -1303,7 +1319,7 @@ h1{
     outline:1px solid $text-color;
 }
 .request-form__checkbox:checked + .request-form__checkbox-label:after {
-    content: '\2714';
+    content: '\2713';
     width:11px;
     height:11px;
     outline:1px solid $text-color;
@@ -1585,7 +1601,7 @@ h1{
     top: 51%;
     left: 5%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 90%;
     @media screen and (max-width:$tablet) {
         top: 56%;
@@ -1753,7 +1769,7 @@ h1{
     height: 112.2vw;
     background-color: $bg-color;
     @media screen and (max-width: $mobile){
-        height: 2080px;
+        height: 2131px;
     }
 }
 .goal__content{
@@ -1895,7 +1911,7 @@ h1{
     font-family: "FuturaBookC"," Verdana",sans-serif;
     font-size: 1.05vw;
     line-height: 1.4vw;
-    color: #FFFFFF70;
+    color:rgba(255, 255, 255, 0.4);
     span{
         padding-bottom: 1%;
         border-bottom: 1px solid $text-color;
@@ -2410,6 +2426,16 @@ h1{
         line-height: 24px;
     }  
 }
+.form-questions__input::-webkit-input-placeholder { /* Edge */
+    color: #FFFFFF;
+    @media screen and (max-width: $tablet){
+        font-size: 1.4vw;
+    }
+    @media screen and (max-width: $mobile){
+        font-size: 18px;
+        line-height: 24px;
+    } 
+}
 .form-questions__check{
     position: relative;
     grid-area: check;
@@ -2446,7 +2472,7 @@ h1{
     }
 }
 .form-questions__checkbox:checked + .form-questions__checkbox-label:after {
-    content: '\2714';
+    content: '\2713';
     width:11px;
     height:11px;
     outline:1px solid $text-color;
@@ -2708,9 +2734,9 @@ footer{
       -webkit-transform: translateX(0);
       transform: translateX(0);
     }
-  }
+}
   
-  @keyframes swing {
+@keyframes swing {
     15% {
       -webkit-transform: translateX(9px);
       transform: translateX(9px);
@@ -2735,12 +2761,11 @@ footer{
       -webkit-transform: translateX(0);
       transform: translateX(0);
     }
-  }
+}
 
-  @-moz-document url-prefix()
-{
+@-moz-document url-prefix(){
       .submit-form__checkbox:checked + .submit-form__checkbox-label:after {
-        font-size: 8px;
+        font-size: 7px;
         line-height: 12px;
         @media screen and (max-width: $mobile){
             font-size: 12px;
@@ -2762,13 +2787,18 @@ footer{
         }
     }
     .goal {
-        height: 2132px;
+        @media screen and (max-width: $mobile){
+            height: 2132px;
+        }
     }
     .article__address {
-        top: -16%;
-        flex-direction: column-reverse;
-        width: 340px;
-        height: 381px;
-    
+        @media screen and (max-width: $mobile){
+            top: -16%;
+            flex-direction: column-reverse;
+            width: 340px;
+            height: 381px;
+        }
+        
     }
+    
 }
