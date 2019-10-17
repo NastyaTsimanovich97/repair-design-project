@@ -2736,3 +2736,39 @@ footer{
       transform: translateX(0);
     }
   }
+
+  @-moz-document url-prefix()
+{
+      .submit-form__checkbox:checked + .submit-form__checkbox-label:after {
+        font-size: 8px;
+        line-height: 12px;
+        @media screen and (max-width: $mobile){
+            font-size: 12px;
+            line-height: 18px;
+        }
+      }
+      .request-form__checkbox:checked + .request-form__checkbox-label:after {
+
+        font-size: 7px;
+        line-height: 12px;
+               
+    }
+    .form-questions__checkbox:checked + .form-questions__checkbox-label:after {
+        font-size: 7px;
+        line-height: 12px;
+        @media screen and (max-width: $mobile){
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    .goal {
+        height: 2132px;
+    }
+    .article__address {
+        top: -16%;
+        flex-direction: column-reverse;
+        width: 340px;
+        height: 381px;
+    
+    }
+}
