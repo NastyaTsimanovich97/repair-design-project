@@ -5,7 +5,7 @@ $FuturaBookC: 'FuturaBookC',' Verdana', sans-serif;
 $FuturaMediumC: 'FuturaMediumC',' Verdana', sans-serif;
 $ProximaNova: 'ProximaNova', ' Verdana', sans-serif;
 $YesevaOne :'Yeseva One',"Comic Sans MS", cursive;
-$mobile: 500px;
+$mobile: 400px;
 $tablet: 768px;
 
 @import url('./fonts.scss');
@@ -519,6 +519,13 @@ h1{
         display: none;
     }
 }
+.projects__slider-control_left,
+.projects__slider-control_right{
+    @media screen and (max-width: 600px){
+        width: 5vw;
+        height: 3vw;
+    }
+}
 .projects__slider-label {
     display: flex;
     align-items: center;
@@ -537,19 +544,20 @@ h1{
     
   }
   
-#switch1:checked~.projects__slider-label label[for="switch1"] {
+#projects__slider__switch1:checked~.projects__slider-label label[for="projects__slider__switch1"] {
     background-color: white;
 }
-#switch2:checked~.projects__slider-label label[for="switch2"] {
+#projects__slider__switch2:checked~.projects__slider-label label[for="projects__slider__switch2"] {
     background-color: white;
 }
-#switch3:checked~.projects__slider-label label[for="switch3"] {
+#projects__slider__switch3:checked~.projects__slider-label label[for="projects__slider__switch3"] {
     background-color: white;
 }
 .slider-control_left{
     width: 3vw;
     height: 1.4vw;
     margin-right: 10px; 
+    
 }
 .slider-control_right{
     width: 3vw;
@@ -579,6 +587,9 @@ h1{
         }
         @media screen and (max-width: $tablet){
             font-size: 1.4vw;
+        }
+        @media screen and (max-width: 600px){
+            font-size: 1.2vw;
         }
     }
 }
@@ -665,6 +676,9 @@ h1{
     width: 57vw;
     min-width: 340px;
     height: 42vw;
+    @media screen and (max-width: 500px) {
+        left: 17vw;
+    }
     @media screen and (max-width:$mobile) {
         top: 1225px;
         left: 0;
@@ -752,6 +766,12 @@ h1{
     line-height: 2.2vw;
     text-align: center;
     color: $bg-color;
+    @media screen and (max-width: 600px) {
+        margin-top: 30%;
+    }
+    @media screen and (max-width: 500px) {
+        margin-top: 37%;
+    }
     @media screen and (max-width:$mobile) {
         left: 0;
         width: 340px;
@@ -874,6 +894,9 @@ h1{
 	height: 11px;
 	width: 11px;
     outline:1px solid $text-color;
+    @media screen and (max-width: $tablet){
+        left: -17%;
+    }
     @media screen and (max-width: $mobile){
         top: 12%;
         width: 18px;
@@ -1048,7 +1071,11 @@ h1{
     font-size: 1.3vw;
     line-height: 25px;
     color: #363636;
+    @media screen and (max-width: 500px) {
+        top: -2%;
+    }
     @media screen and (max-width:$mobile) {
+        top: 6%;
         font-size: 15px;
         line-height: 138.8%;
     }
@@ -1064,7 +1091,11 @@ h1{
     li{
         list-style:disc;
     }
+    @media screen and (max-width: 500px) {
+        top: -2%;
+    }
     @media screen and (max-width:$mobile) {
+        top: 9%;
         font-size: 13px;
         line-height: 169.8%;
     }
@@ -1078,7 +1109,11 @@ h1{
     -webkit-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
     -moz-box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
     box-shadow: 0px 4px 24px -8px rgba(227,184,115,1);
+    @media screen and (max-width: 500px) {
+        top: 5%;
+    }
     @media screen and (max-width:$mobile) {
+        top: 18%;
         width: 190px;
         height: 40px;
     }
@@ -1088,7 +1123,7 @@ h1{
         font-style: normal;
         font-weight: normal;
         font-size: 1.25vw;
-        line-height: 25px;
+        line-height: 2vw;
         text-transform: uppercase;
         text-align: center;
         color: #FFFFFF;
@@ -1126,7 +1161,7 @@ h1{
     width: 44.2vw;
     height: 44.2vw;
     border-radius: 100%;
-    border: 5px solid #E3B873;
+    border: 3px solid #E3B873;
     border-right: 10px solid rgba(255,255,255, $alpha: 0.1);;
 }
 .background-circle2{
@@ -1137,7 +1172,7 @@ h1{
     height: 10vw;
     border-radius: 100%;
     border: 5px solid #FFFFFF01;
-    border-right: 5px solid #E3B873;
+    border-right: 3px solid #E3B873;
     transform: rotate(25deg);
 }
 .background-circle3{
@@ -1148,7 +1183,7 @@ h1{
     height: 3.3vw;
     border-radius: 100%;
     border: 5px solid #FFFFFF01;
-    border-right: 5px solid #E3B873;
+    border-right: 3px solid #E3B873;
     transform: rotate(-34deg);
 }
 .background-circle4{
@@ -1159,7 +1194,7 @@ h1{
     height: 5vw;
     border-radius: 100%;
     border: 5px solid #FFFFFF01;
-    border-right: 5px solid #E3B873;
+    border-right: 3px solid #E3B873;
     transform: rotate(-7deg);
 }
 .circle{
@@ -1379,6 +1414,10 @@ h1{
     width: 26.1vw;
     padding-top: 9vw;
     padding-left: 10vw;
+    @media screen and (max-width: 500px){
+        padding-top: 4vw;
+        padding-left: 8vw;
+    }
     @media screen and (max-width: $mobile){
         width: 340px;
         padding-top: 0;
@@ -1409,17 +1448,13 @@ h1{
     a{
         margin-bottom: 0.8vw;
         font-family: $ProximaNova;
-        font-size: 20px;
-        line-height: 34px;
+        font-size: 1.8vw;
+        line-height: 2.4vw;
         color: #FFFFFF;
         &:hover{
             padding-bottom: 4px;
             border-bottom: 1px solid $text-color;
             color: $text-color;
-        }
-        @media screen and (max-width: 1000px){
-            font-size: 15px;
-            line-height: 20px;
         }
     }
     li{
@@ -1556,6 +1591,9 @@ h1{
     align-items: center;
     @media screen and (max-width:$tablet) {
         left: 43%;
+    }
+    @media screen and (max-width: 500px) {
+        left: 40%;
     }
     @media screen and (max-width: $mobile){
         top: 1%;
@@ -1731,6 +1769,9 @@ h1{
     height: 3.8vw;
     margin-top: 2.8vw;
     background-color: $text-color;
+    @media screen and (max-width: 500px){
+        margin-top: 1vw;
+    }
     @media screen and (max-width: $mobile){
         width: 190px;
         height: 40px;
@@ -2121,7 +2162,7 @@ h1{
     font-style: normal;
     font-weight: normal;
     font-size: 1.25vw;
-    line-height: 25px;
+    line-height: 2.05vw;
     text-align: center;
     color: #181818;
     @media screen and (max-width: $mobile){
@@ -2135,7 +2176,7 @@ h1{
     top: 15%;
     font-family: $FuturaBookC;
     font-size: 1.25vw;
-    line-height: 26px;
+    line-height: 2.1vw;
     text-align: center;
     color: #959595;
     @media screen and (max-width: $mobile){
@@ -2359,8 +2400,15 @@ h1{
     height: 26.1vw;
     padding-top: 4vw;
     padding-left: 13vw;
+    @media screen and (max-width: 600px){
+        padding-top: 1vw;
+    }
+    @media screen and (max-width: 500px){
+        grid-template-rows: 10% 24% 33%;
+    }
     @media screen and (max-width: $mobile){
         grid-template-areas: "header" "name" "phone" "question" "check" "submit";
+        grid-template-rows: 1fr 0.5fr 0.5fr 1fr 1fr 1fr;
         width: 375px;
         height: 550px;
         padding-left: 4%;
@@ -2515,6 +2563,7 @@ h1{
     text-align: center;
     text-transform: uppercase;
     color: #FFFFFF;
+    
     @media screen and (max-width: $tablet){
         font-size: 1.2vw;
     }
@@ -2555,7 +2604,7 @@ h1{
     width: 41vw;
     height: 10.8vw;
     @media screen and (max-width: $tablet){
-        top: -24%;
+        top: -27%;
     }
     @media screen and (max-width: $mobile){
         top: 23%;
